@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #f5f5f0;
+}
+
+.leftfooter{
+    width: 40%;
+    height: 200px;
+    background-color: #f5f5f0;
+    float: left;
+}
+
+h1{
+    line-height: 80px;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.contact,.gmail{
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+
+}
+.rightfooter{
+    width: 60%;
+    height: 200px;
+    background-color: #f5f5f0;
+    float: left;
+}
+
+.icons{
+    width: 75%;
+    height: 90px;
+    margin: 10px auto 10px auto;
+    background-color: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    height: 60px;
+    width: 60px;
+    background-color: #f5f6fa;
+    border-radius: 30px;
+    text-align: center;
+    margin: 25px;
+    line-height: 70px;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+
+}
+a i{
+    transition: all 0.3s linear;
+}
+a:hover i{
+    transform: scale(1.5);
+}
+
+.fa-facebook{
+    color: #e84393;
+}
+.fa-twitter{
+    color: #e84118;
+}
+
+.fa-instagram{
+    color: #0097e6;
+}
+
+.fa-github{
+    color: #0097e8;
+}
+
+.fa-linkedin{
+    color: #e84393;
+}
+
