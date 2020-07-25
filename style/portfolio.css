@@ -79,90 +79,84 @@ p{
    font-family: 'Baloo Bhaina 2';font-size: 40px;
 }
 
-.footer{
+
+footer{
     width: 100%;
-    height: 150px;
-    background-color: white;
+    height: 200px;
+    background-color: #f5f5f0;
 }
 
-.footerleft{
+.leftfooter{
     width: 40%;
-    height: 150px;
-    background-color: #F0F1EF;
+    height: 200px;
+    background-color: #f5f5f0;
     float: left;
 }
+
 h1{
-   font-family: 'Aclonica';font-size: 50px;
-   padding-top:40px;
-   padding-left: 20px;
-   
-}
-
-
-.footerright{
-    width: 60%;
-    height: 150px;
-    background-color: #F8F9F9;
-    float: right;
-}
-.social-nav{
-    height:50px;
-}
-
-h2{
-    font-family: 'Aclonica';font-size: 30px;
-    padding-top:20px;
-    padding-left: 200px;
-    
- }
- .anchor{
-    color: black;
-    font-size: 25px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    position: relative;
-}
-.anchor:before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 0;
-    height:3px;
-    background-color: black;
-    transition: all 0.1s linear;
-    }
-.anchor:hover:before{
-    width: 100%;
-    background-color: #F8F9F9
-}
-
-
-.footer1{
-    width: 100%;
-    height: 150px;
-    background-color:white;
-}
-.contact{
-    line-height: 75px;
+    line-height: 80px;
+    text-align: center;
     font-size: 50px;
+    text-decoration: underline;
 }
-.contact-details{
-    width: 25%;
-    background-color: #F0F1EF;
-    height: 150px;
+
+.contact,.gmail{
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+
+}
+.rightfooter{
+    width: 60%;
+    height: 200px;
+    background-color: #f5f5f0;
     float: left;
 }
-.contact-details1{
+
+.icons{
     width: 75%;
-    background-color: #F5F6F5;
-    height: 150px;
-    float: right;
+    height: 90px;
+    margin: 10px auto 10px auto;
+    background-color: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-p{
-    padding: 10px 0px 0px 10px;
+
+a{
+    height: 60px;
+    width: 60px;
+    background-color: #f5f6fa;
+    border-radius: 30px;
+    text-align: center;
+    margin: 25px;
+    line-height: 70px;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+
 }
-.gmail{
-    padding: 0px 0px 10px 20px; 
+a i{
+    transition: all 0.3s linear;
 }
+a:hover i{
+    transform: scale(1.5);
+}
+
+.fa-facebook{
+    color: #e84393;
+}
+.fa-twitter{
+    color: #e84118;
+}
+
+.fa-instagram{
+    color: #0097e6;
+}
+
+.fa-github{
+    color: #0097e8;
+}
+
+.fa-linkedin{
+    color: #e84393;
+}
+
