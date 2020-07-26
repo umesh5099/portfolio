@@ -83,3 +83,78 @@ a:hover i{
     color: #e84393;
 }
 
+
+
+
+@media only screen and (max-width: 864px) {
+
+    .leftfooter{
+        width: 100%;
+        text-align: center;
+    }
+
+    .rightfooter{
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 686px) {
+
+    /* .leftfooter{
+        width: 100%;
+        text-align: center;
+    } */
+
+    .rightfooter{
+        width: 100%;
+        text-align: center;
+    }
+
+
+    a{
+        height: 45px;
+        width: 45px;
+        background-color: #f5f6fa;
+        border-radius: 25px;
+        text-align: center;
+        margin: 25px;
+        line-height: 50px;
+        /* box-shadow: 1px 4px 2px 2px #dcdde1; */
+    
+    }
+
+
+.one{
+    font-size: 12px;
+}
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    a{
+        height: 30px;
+        width: 30px;
+        background-color: #f5f6fa;
+        border-radius: 30px;
+        text-align: center;
+        margin: 25px;
+        line-height: 40px;
+        box-shadow: 1px 4px 2px 2px #dcdde1;
+    
+    }
+
+
+.one{
+    font-size: 8px;
+}
+
+}
