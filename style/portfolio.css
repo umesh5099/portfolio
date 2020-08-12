@@ -1,25 +1,279 @@
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-   
-.main{
-    width:800px;
-    background-color: white;
-    margin-left:60px;
-    padding-top: 20px;
-}
-
-p{
-   font-size: 30px;
-   font-family: 'Baloo Bhaina 2';font-size: 40px;
-}
-.division{
+/* ********************************** HEADER*********************************************** */
+.image-box{
     width: 100%;
-    height: 100px;
+    height: auto;
+    /* background-color: aqua; */
+}
+.image{
+    width: 70%;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8px;
+    padding-bottom: 15px;
+}
+.name-box{
+    width: 100%;
+    height: auto;
+    /* background-color: blueviolet; */
+}
+.heading-name{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Audiowide';
+    line-height: auto;
+}
+.links-box{
+    width: 100%;
+    height: auto;
+    /* background-color: lightcoral ; */
+}
+ul{
+    list-style-type: none;
+}
+li{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+li a{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    color: red;
+}
+/* ********************************** HEADER-END ***************************************** */
+
+/* ************************************** MAIN ***************************************** */
+.main{
+    width: 100%;
+    height: auto;
+    /* background-color: lightgreen; */
+}
+.main-content{
+    text-align: left;
+    font-family: 'Average Sans';
+    font-size: 35px;
+    padding:15px;
+}
+/* ************************************** MAIN-END ***************************************** */   
+
+/* ************************************** FOOTER ********************************************/
+.contact-box{
+    width: 100%;
+    height: auto;
+    /* background-color: lightpink; */
+}
+.contact-details{
+    line-height: auto;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+.contact{
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+.gmail{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 0px 5px 5px;
+}
+.social-box{
+    width: 100%;
+    height: auto;
+    /* background-color: lightslategrey; */
+}
+.intouch{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-@media (max-width :1000px){
-   
+/* ************************************** SOCIAL ICONS********************************************/
+.icons{
+    width: 100%;
+    height: auto;
+    /* background-color: maroon; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 10px auto;
 }
+a{
+    font-size: 40px;
+    margin: 20px;
+    color: black;
+}
+a i{
+    transition: all 0.3s linear;
+}
+a:hover i{
+    transform: scale(1.5);
+}
+
+.fa-facebook-f:hover{
+    color: #68a834;
+}
+.fa-twitter:hover{
+    color: #e84118;
+}
+.fa-instagram:hover{
+    color: #11FBE9;
+}
+.fa-github:hover{
+    color: #F9EC1C;
+}
+.fa-linkedin-in:hover{
+    color: #e84393;
+} 
+
+
+/* ************************************** FOOTER-END**************************************** */
+
+
+/* ************************************** RESPONSIVE **************************************** */
+
+@media only screen and (max-width: 500px) {
+    .image{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width:800px){
+    .image{
+        width: 30%;
+        margin: 0px 0px 0px 240px ;
+        padding-bottom: 5px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .header{
+        width: 100%;
+        height:100px
+    }
+    .image-box{
+        max-width: 20%;
+        height: 120px;
+        float: left;
+    }
+    .image{
+        width: 40%;
+        text-align: end;
+        /* padding-left: 240px; */
+     }
+    .name-box{
+        width: 40%;
+        height: 120px;
+        /* background-color: blueviolet; */
+        float: left;
+    }
+    .heading-name{
+        text-align: left;
+        font-size: 45px;
+        font-family: 'Audiowide';
+        line-height: 150px;
+        
+    }
+   
+
+    .links-box{
+        width: 40%;
+        height: 120px;
+        /* background-color: lightcoral ; */
+        float: left;
+    }
+   
+    li{
+        display: inline-block;
+        line-height: 150px;
+        text-align: right;
+        padding-left: 100px;
+        margin: 0px;
+    }
+    li a{
+        font-size: 40px;
+    }
+    .clear{
+        clear: both;
+    }
+
+    .main-content{
+        padding: 40px 40px 40px 80px;
+    }
+    .footer{
+        width: 100%;
+        height: 170;
+    }
+    .contact-box{
+        width: 40%;
+        height:170;
+        /* background-color: lightpink; */
+        float: left;
+        border-right: 1px solid grey;
+    }
+    .social-box{
+        width: 60%;
+        height: 170px;
+        /* background-color: lightslategrey; */
+        float: left;
+    }
+    .intouch{
+        font-size: 50px;
+    }
+    .icons{
+        height: 113px;
+    }
+    .icons a{
+        font-size: 60px;
+        margin: 40px;
+        color: black;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
