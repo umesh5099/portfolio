@@ -117,17 +117,17 @@ a{
     margin: 20px;
     color: black;
 }
-a i{
+a img{
     transition: all 0.3s linear;
 }
-a:hover i{
+a:hover img{
     transform: scale(1.5);
 }
 
-.fa-facebook-f:hover{
+img:hover{
     color: #68a834;
 }
-.fa-twitter:hover{
+.twitter:hover{
     color: #e84118;
 }
 .fa-instagram:hover{
@@ -136,7 +136,7 @@ a:hover i{
 .fa-github:hover{
     color: #F9EC1C;
 }
-.fa-linkedin-in:hover{
+.linkedin:hover{
     color: #e84393;
 } 
 
@@ -223,6 +223,7 @@ a:hover i{
         height:170;
         /* background-color: lightpink; */
         float: left;
+        border-top: 1px solid grey;
         border-right: 1px solid grey;
     }
     .social-box{
