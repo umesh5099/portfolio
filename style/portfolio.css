@@ -72,6 +72,9 @@ li a:hover{
     width: 100%;
     height: auto;
     /* background-color: lightpink; */
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin-bottom: 5px;;
 }
 .contact-details{
     line-height: auto;
@@ -223,14 +226,15 @@ img:hover{
         height:170;
         /* background-color: lightpink; */
         float: left;
-        border-top: 1px solid grey;
-        border-right: 1px solid grey;
+        border: 1px solid grey;
+        /* : 1px solid grey; */
     }
     .social-box{
         width: 60%;
-        height: 170px;
+        height: 172px;
         /* background-color: lightslategrey; */
         float: left;
+        border: 1px solid grey;
     }
     .intouch{
         font-size: 50px;
