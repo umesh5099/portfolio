@@ -126,7 +126,7 @@ a img{
 a:hover img{
     transform: scale(1.5);
 }
-
+/* 
 img:hover{
     color: #68a834;
 }
@@ -141,7 +141,7 @@ img:hover{
 }
 .linkedin:hover{
     color: #e84393;
-} 
+}  */
 
 
 /* ************************************** FOOTER-END**************************************** */
