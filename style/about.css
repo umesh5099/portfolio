@@ -133,7 +133,7 @@ ul{
     list-style-type: none;
 }
 .hobbycontent{
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding-left: 2rem;
     font-family: 'Average Sans';
 }
@@ -166,6 +166,13 @@ ul{
         list-style-type: none;
         
     }
+    .hobbycontent{
+        font-size: 3.5rem;
+        /* padding-left: 2rem; */
+        font-family: 'Average Sans';
+        font-weight: normal;
+    }
+    
 }
 
 /* 
