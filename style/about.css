@@ -1,158 +1,246 @@
 *{
-    margin: 0;
-    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%
+}
+body{
+    margin: 0rem;
 }
 
- .header{
-    width: 100%;
-    height: 410px;
-    background-color: #F0F1EF;
-}
+/* ***************************************** HEADER *********************************** */
 
-img{
-    width: 300px;
-    height: 300px;
-    alt: avatar;
+header{
+    display:flex;
+    background: rgb(238, 238, 235);
+}
+.image{
+    flex: 20%;
+    text-align: end;
+    padding: 5rem .5rem 3rem 0.5rem;
+    /* background: rgb(107, 151, 235); */
+}
+.mypic{
     border-radius: 50%;
-    padding-left: 50px;
-    padding-top: 10px;
-    margin-left: 35%;
-  
-    
 }
 .name{
-    font-family: 'Bungee Inline';
-    font-size: 60px;
-    color: black;
-    padding-left: 50px;
-    padding-top: 20px;
-    text-align: center ;
+    flex: 40%;
+    /* background: violet; */
+}
+.nameheading{
+    font-size: 5rem;
+    line-height: 12rem;
+    font-family: 'Audiowide';
+}
+.headerlinks{
+    flex: 40%;
+    text-align: end;
+    /* background: turquoise; */
+}
+.headerlinks a{
+    font-size: 5rem;
+    margin:0rem 2rem 0rem 4rem;
+    line-height: 18rem;
+    text-decoration: none;
+    /* color:black; */
+}
+.headerlinks a:hover{
+    color: red;
 }
 
-    iframe{
-        width: 100%;
-        height:110px;
-        padding: 0px 10px 0px 10px;
+/* *********************************** RESPONSIVE HEADER ********************************* */
+
+@media screen and (max-width: 850px) {
+    header, .headerlinks{   
+      flex-direction: column;
+    }
+    .image{
+        text-align: center;
+        padding: 1rem .2rem;
+    }
+    .name{
+        flex: 40%;
+        text-align: center;
+        padding:1rem .2rem;
+    }
+    .nameheading{
+        font-size: 6rem;
+        line-height: 9rem;
+    }
+    .headerlinks{
+        text-align: center;
+    }
+    .headerlinks a{
+       line-height: 9rem;
+       margin: 0rem 5rem 2rem 5rem;
+    }
+}
+
+/* ************************************ HEADER END *********************************** */
+
+/* ************************************ MAIN  *********************************** */
+
+main{
+    display: flex;
+}
+.headings{
+    font-family: 'Average Sans';
+    font-size: 5rem;
+    text-align: start;
+    padding-left: 3rem;
+    background-color: linen;
+}
+.careercontent{
+    font-size: 3.5rem;
+    font-family: 'Average Sans';
+    padding-left: 3rem;
+    padding-right: 2rem;
+}
+table{
+    width: 98.5%;
+     height: 20rem;
+     margin: 0rem 1rem 2rem 1rem;
+}
+th{
+    font-size: 3rem;
+    background-color: linen;
+}
+.institutename{
+    color: #414140 ;
+    font-weight: bold;
+    background-color: linen;
+}
+td{
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* *********************************unordered list :none  ******************************** */
+
+ul{
+    display: none;
+}
+
+/* *********************************unordered list :none  ******************************** */
+
+.tabledetails{
+    text-align: left;
+}
+
+.hobby{
+    display: block;
+    list-style-type: none;
+}
+.hobbycontent{
+    font-size: 4rem;
+    padding-left: 2rem;
+    font-family: 'Average Sans';
+}
+
+
+@media screen and (max-width: 850px) {
+    table{
+        display: none;
     }
     
-
-.main1{
-    background-color: #F0F1EF;
-    width: 100%;
-    height: 300px;
+    ul{
+        display: block;
+    }
+   
+    ul li{
+        font-size: 4rem;
+        font-weight: bold;
+        color: black ;
+    }
+    .instdetails{
+        font-size: 2.5rem;
+        color: #414140 ;
+        font-weight: normal;
+        list-style-type: none;
+    }
+    .instdetails1{
+        font-size: 2.3rem;
+        color: #414140 ;
+        font-weight: normal;
+        list-style-type: none;
+        
+    }
 }
 
-.objective{
-    font-family: 'Calistoga';
-    font-size: 40px;
-    color: black;
-    padding-left: 50px;
-    padding-top: 25px;
+/* 
+@media screen and (max-width: 500px) {
+    table{
+        width: 35.8rem;
+         height:5rem;
+         margin: 0rem 3rem 2rem 1rem;
+    }
+    th{
+        font-size: 1rem;
+    }
+    .institutename{
+        color: #414140 ;
+        font-weight: bold;
+    }
+    td{
+        font-size: 1rem;
+        text-align: center;
+    }
+   
+} */
+/* ************************************ MAIN END *********************************** */
+
+/* ************************************ FOOTER *********************************** */
+
+footer{
+    display: flex;
+}
+.leftbox{
+    flex: 32%;
+    border-right: 0.05rem solid lightgrey;
+    background: #F1F1F1  ;
+}
+.contact-details{
+    font-family: 'Bungee Inline';
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: .5rem;
     text-decoration: underline;
-
 }
-.p1{
-    padding-left: 50px ;
-    font-size: 40px;
+.lefticon{
+    text-align: center;
 }
 
-.main2{
-    background-color: #F0F1EF;
-    width: 100%;
-    height: 310px;
+.lefticon img{
+    margin: 0rem 5rem 1rem 5rem;
 }
-.objective2{
-    font-family: 'Calistoga';
-    font-size: 40px;
-    color: black;
-    padding-left: 50px;
-    padding-top: 25px;
+.lefticon img{
+   transition: all 0.3s linear;
+}
+.lefticon img:hover{
+    transform: scale(1.5);
+ }
+ 
+
+ .rightbox{
+    flex: 58%;
+    background: #F3F5F5 ;
+}
+.intouch{
+    font-family: 'Bungee Inline';
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: .5rem;
+    /* word-spacing: .5rem; */
     text-decoration: underline;
-
-}
-ul{
-    padding-left: 90px;
-    font-size: 40px;
-  
 }
 
-.main3{
-    background-color: #F0F1EF;
-    width: 100%;
-    height: 530px;
-}
-.objective3{
-    font-family: 'Calistoga';
-    font-size: 40px;
-    color: black;
-    padding-left: 50px;
-    padding-top: 25px;
-    text-decoration: underline;
-
-}
-.academic{
-    color: blue;
-    font-size: 25px;
-    text:bold;
-}
-
-
-
-
-@media only screen and (max-width: 864px) {
-
-    .main1{
-        width: 100%;
-        height:410px;
-        text-align: justify;
-        text-justify: inter-word;
-        padding: 10px 10px 10px 10px;
-        /* background-color: blue; */
-    }
-    /* .p1{
-        width: 100%;
-        text-align: justify;
-        text-justify: inter-word;
-    } */
-
-
-
-    .main2{
-        background-color: #F0F1EF;
-        width: 100%;
-        text-align: justify;
-        text-justify: inter-word;
-        padding: 10px 10px 10px 10px;
+@media screen and (max-width: 850px) {
+    footer{   
+      flex-direction: column;
     }
 
-
 }
 
-@media  (min-width: 500px) {
+/* *********************************** FOOTER END ******************************  */
 
-    .main1{
-        width: 100%;
-        height:410px;
-        text-align: justify;
-        text-justify: inter-word;
-        padding: 10px 10px 10px 10px;
-        /* background-color: blue; */
-    }
-    /* .p1{
-        width: 100%;
-        text-align: justify;
-        text-justify: inter-word;
-    } */
-
-
-
-    .main2{
-        background-color: #F0F1EF;
-        width: 100%;
-        text-align: justify;
-        text-justify: inter-word;
-        padding: 10px 10px 10px 10px;
-    }
-
-
-}
