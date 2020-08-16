@@ -1,160 +1,65 @@
 *{
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
+html{
+    font-size: 62.5%
+}
+body{
+    margin: 0rem;
+}
+
+/* ************************************ FOOTER *********************************** */
 
 footer{
-    width: 100%;
-    height: 200px;
-    background-color: #f5f5f0;
+    display: flex;
 }
-
-.leftfooter{
-    width: 40%;
-    height: 200px;
-    background-color: #f5f5f0;
-    float: left;
+.leftbox{
+    flex: 32%;
+    border-right: 0.05rem solid lightgrey;
+    background: #F1F1F1  ;
 }
-
-h1{
-    line-height: 80px;
+.contact-details{
+    font-family: 'Bungee Inline';
+    font-size: 5rem;
     text-align: center;
-    font-size: 50px;
+    letter-spacing: .5rem;
+    text-decoration: underline;
+}
+.lefticon{
+    text-align: center;
+    /* text-decoration: none; */
+}
+.lefticon img{
+    margin: 0rem 5rem 1rem 5rem;
+    /* text-decoration: none; */
+}
+.lefticon img{
+   transition: all 0.3s linear;
+}
+.lefticon img:hover{
+    transform: scale(1.5);
+ }
+ 
+
+ .rightbox{
+    flex: 58%;
+    background: #F3F5F5 ;
+}
+.intouch{
+    font-family: 'Bungee Inline';
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: .5rem;
+    word-spacing: .5rem;
     text-decoration: underline;
 }
 
-.contact,.gmail{
-    text-align: center;
-    font-size: 33px;
-    font-weight: bold;
-
-}
-.rightfooter{
-    width: 60%;
-    height: 200px;
-    background-color: #f5f5f0;
-    float: left;
-}
-
-.icons{
-    width: 75%;
-    height: 90px;
-    margin: 10px auto 10px auto;
-    background-color: #f5f5f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-a{
-    height: 60px;
-    width: 60px;
-    background-color: #f5f6fa;
-    border-radius: 30px;
-    text-align: center;
-    margin: 25px;
-    line-height: 70px;
-    box-shadow: 1px 4px 2px 2px #dcdde1;
-
-}
-a i{
-    transition: all 0.3s linear;
-}
-a:hover i{
-    transform: scale(1.5);
-}
-
-.fa-facebook{
-    color: #e84393;
-}
-.fa-twitter{
-    color: #e84118;
-}
-
-.fa-instagram{
-    color: #0097e6;
-}
-
-.fa-github{
-    color: #0097e8;
-}
-
-.fa-linkedin{
-    color: #e84393;
-}
-
-
-
-
-@media only screen and (max-width: 864px) {
-
-    .leftfooter{
-        width: 100%;
-        text-align: center;
+@media screen and (max-width: 850px) {
+    footer{   
+      flex-direction: column;
     }
 
-    .rightfooter{
-        width: 100%;
-        text-align: center;
-    }
-
-
-
-
-
 }
 
-
-@media only screen and (max-width: 686px) {
-
-    /* .leftfooter{
-        width: 100%;
-        text-align: center;
-    } */
-
-    .rightfooter{
-        width: 100%;
-        text-align: center;
-    }
-
-
-    a{
-        height: 45px;
-        width: 45px;
-        background-color: #f5f6fa;
-        border-radius: 25px;
-        text-align: center;
-        margin: 25px;
-        line-height: 50px;
-        /* box-shadow: 1px 4px 2px 2px #dcdde1; */
-    
-    }
-
-
-.one{
-    font-size: 12px;
-}
-
-
-}
-
-@media only screen and (max-width: 500px) {
-
-    a{
-        height: 30px;
-        width: 30px;
-        background-color: #f5f6fa;
-        border-radius: 30px;
-        text-align: center;
-        margin: 25px;
-        line-height: 40px;
-        box-shadow: 1px 4px 2px 2px #dcdde1;
-    
-    }
-
-
-.one{
-    font-size: 8px;
-}
-
-}
+/* *********************************** FOOTER END ******************************  */
