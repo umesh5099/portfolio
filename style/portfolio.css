@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    text-decoration: none;
 }
 html{
     font-size: 62.5%
@@ -111,6 +112,7 @@ footer{
 .lefticon{
     text-align: center;
 }
+
 .lefticon img{
     margin: 0rem 5rem 1rem 5rem;
 }
@@ -141,3 +143,6 @@ footer{
     }
 
 }
+
+/* *********************************** FOOTER END ******************************  */
+
