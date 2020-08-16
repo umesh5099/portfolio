@@ -1,84 +1,79 @@
 *{
-    margin: 0rem;
+    box-sizing: border-box;
 }
 html{
-    /* 1rem=10px */
-    font-size: 62.5%; 
+    font-size: 62.5%
+}
+body{
+    margin: 0rem;
 }
 
-.header{
-    display: flex;
-    text-align: center;
+/* ***************************************** HEADER *********************************** */
+
+header{
+    display:flex;
+    background: rgb(238, 238, 235);
 }
-.left{
-    flex: 30%;
-    /* background: #EFF2F2; */
+.image{
+    flex: 20%;
+    text-align: end;
+    padding: 5rem .5rem 3rem 0.5rem;
+    /* background: rgb(107, 151, 235); */
 }
-img{
-    width: 10rem;
-    height: 10rem;
+.mypic{
     border-radius: 50%;
-    padding:0.5rem 0rem;
-    text-align: end;
 }
-.mid{
+.name{
     flex: 40%;
-    /* background: #EFF2F2; */
+    /* background: violet; */
 }
-h1{
-    text-align: start;
+.nameheading{
     font-size: 5rem;
-    line-height: 10rem;
+    line-height: 12rem;
+    font-family: 'Audiowide';
 }
-.right{
-    flex: 30%;
-    /* background: #EFF2F2; */
-}
-a{
-    font-size: 4rem;
-    margin: 2rem;
+.headerlinks{
+    flex: 40%;
     text-align: end;
-    line-height: 10rem;
-    text-decoration: none;
+    /* background: turquoise; */
 }
-a:hover{
+.headerlinks a{
+    font-size: 5rem;
+    margin:0rem 2rem 0rem 4rem;
+    line-height: 18rem;
+    text-decoration: none;
+    /* color:black; */
+}
+.headerlinks a:hover{
     color: red;
 }
 
-@media only screen and (max-width: 600px) {
-    .header {
+/* *********************************** RESPONSIVE HEADER ********************************* */
+
+@media screen and (max-width: 850px) {
+    header, .headerlinks{   
       flex-direction: column;
     }
-    h1{
+    .image{
+        text-align: center;
+        padding: 1rem .2rem;
+    }
+    .name{
+        flex: 40%;
+        text-align: center;
+        padding:1rem .2rem;
+    }
+    .nameheading{
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+    .headerlinks{
         text-align: center;
     }
-    a{
-        margin: 6rem;
+    .headerlinks a{
+       line-height: 5rem;
+       margin: 0rem 5rem 0rem 5rem;
     }
-  }
+}
 
-  @media only screen and (max-width: 850px) and (min-width: 600px) {
-      .header{
-          flex-direction: column;
-      }
-      h1{
-          text-align: center;
-      }
-      a{
-          margin: 15rem;
-      }
-
-  }
-
-  /* @media only screen and (min-width: 850px) {
-    .header {
-      flex-direction: column;
-    }
-    h1{
-        text-align: center;
-    }
-    /* a{
-        margin: 6rem;
-    } */
-  
-  
+/* ************************************ HEADER END *********************************** */
