@@ -66,13 +66,13 @@ header{
     }
     .nameheading{
         font-size: 6rem;
-        line-height: 5rem;
+        line-height: 9rem;
     }
     .headerlinks{
         text-align: center;
     }
     .headerlinks a{
-       line-height: 5rem;
+       line-height: 9rem;
        margin: 0rem 5rem 0rem 5rem;
     }
 }
@@ -104,7 +104,7 @@ footer{
 }
 .contact-details{
     font-family: 'Bungee Inline';
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     letter-spacing: .5rem;
     text-decoration: underline;
@@ -130,10 +130,10 @@ footer{
 }
 .intouch{
     font-family: 'Bungee Inline';
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     letter-spacing: .5rem;
-    word-spacing: .5rem;
+    /* word-spacing: .5rem; */
     text-decoration: underline;
 }
 
