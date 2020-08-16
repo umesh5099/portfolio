@@ -1,284 +1,142 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
-/* ********************************** HEADER*********************************************** */
-.image-box{
-    width: 100%;
-    height: auto;
-    /* background-color: aqua; */
+html{
+    font-size: 62.5%
+}
+body{
+    margin: 0rem;
+}
+
+/* ***************************************** HEADER *********************************** */
+
+header{
+    display:flex;
+    background: rgb(238, 238, 235);
 }
 .image{
-    width: 70%;
+    flex: 20%;
+    text-align: end;
+    padding: 5rem .5rem 3rem 0.5rem;
+    /* background: rgb(107, 151, 235); */
+}
+.mypic{
     border-radius: 50%;
-    text-align: center;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 8px;
-    padding-bottom: 15px;
 }
-.name-box{
-    width: 100%;
-    height: auto;
-    /* background-color: blueviolet; */
+.name{
+    flex: 40%;
+    /* background: violet; */
 }
-.heading-name{
-    text-align: center;
-    font-size: 45px;
+.nameheading{
+    font-size: 5rem;
+    line-height: 12rem;
     font-family: 'Audiowide';
-    line-height: auto;
 }
-.links-box{
-    width: 100%;
-    height: auto;
-    /* background-color: lightcoral ; */
+.headerlinks{
+    flex: 40%;
+    text-align: end;
+    /* background: turquoise; */
 }
-ul{
-    list-style-type: none;
-}
-li{
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-li a{
-    font-size: 50px;
+.headerlinks a{
+    font-size: 5rem;
+    margin:0rem 2rem 0rem 4rem;
+    line-height: 18rem;
     text-decoration: none;
-    color: black;
+    /* color:black; */
 }
-li a:hover{
+.headerlinks a:hover{
     color: red;
 }
-/* ********************************** HEADER-END ***************************************** */
 
-/* ************************************** MAIN ***************************************** */
-.main{
-    width: 100%;
-    height: auto;
-    /* background-color: lightgreen; */
+/* *********************************** RESPONSIVE HEADER ********************************* */
+
+@media screen and (max-width: 850px) {
+    header, .headerlinks{   
+      flex-direction: column;
+    }
+    .image{
+        text-align: center;
+        padding: 1rem .2rem;
+    }
+    .name{
+        flex: 40%;
+        text-align: center;
+        padding:1rem .2rem;
+    }
+    .nameheading{
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+    .headerlinks{
+        text-align: center;
+    }
+    .headerlinks a{
+       line-height: 5rem;
+       margin: 0rem 5rem 0rem 5rem;
+    }
 }
-.main-content{
-    text-align: left;
+
+/* ************************************ HEADER END *********************************** */
+
+/* ************************************ MAIN  *********************************** */
+
+main{
+    display: flex;
+}
+main p{
     font-family: 'Average Sans';
-    font-size: 35px;
-    padding:15px;
+    font-size: 3.5rem;
+    text-align: center;
 }
-/* ************************************** MAIN-END ***************************************** */   
 
-/* ************************************** FOOTER ********************************************/
-.contact-box{
-    width: 100%;
-    height: auto;
-    /* background-color: lightpink; */
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-    margin-bottom: 5px;;
+/* ************************************ MAIN END *********************************** */
+
+/* ************************************ FOOTER *********************************** */
+
+footer{
+    display: flex;
+}
+.leftbox{
+    flex: 30%;
+    background: #F1F1F1  ;
 }
 .contact-details{
-    line-height: auto;
+    font-family: 'Bungee Inline';
+    font-size: 5rem;
     text-align: center;
-    font-size: 50px;
+    letter-spacing: .5rem;
     text-decoration: underline;
 }
-.contact{
+.lefticon{
     text-align: center;
-    font-size: 33px;
-    font-weight: bold;
 }
-.gmail{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0px 0px 5px 5px;
+.lefticon img{
+    margin: 0rem 5rem 1rem 5rem;
 }
-.social-box{
-    width: 100%;
-    height: auto;
-    /* background-color: lightslategrey; */
+.lefticon img{
+   transition: all 0.3s linear;
+}
+.lefticon img:hover{
+    transform: scale(1.5);
+ }
+ 
+
+ .rightbox{
+    flex: 70%;
+    background: #F3F5F5 ;
 }
 .intouch{
+    font-family: 'Bungee Inline';
+    font-size: 5rem;
     text-align: center;
-    font-size: 50px;
-    font-weight: bold;
+    letter-spacing: .5rem;
+    word-spacing: .5rem;
     text-decoration: underline;
 }
 
-/* ************************************** SOCIAL ICONS********************************************/
-.icons{
-    width: 100%;
-    height: auto;
-    /* background-color: maroon; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto 10px auto;
-}
-a{
-    font-size: 40px;
-    margin: 20px;
-    color: grey;
-}
-a img{
-    transition: all 0.3s linear;
-}
-a:hover img{
-    transform: scale(1.5);
-}
-/* 
-img:hover{
-    color: #68a834;
-}
-.twitter:hover{
-    color: #e84118;
-}
-.fa-instagram:hover{
-    color: #11FBE9;
-}
-.fa-github:hover{
-    color: #F9EC1C;
-}
-.linkedin:hover{
-    color: #e84393;
-}  */
-
-
-/* ************************************** FOOTER-END**************************************** */
-
-
-/* ************************************** RESPONSIVE **************************************** */
-
-@media only screen and (max-width: 500px) {
-    .image{
-        width: 50%;
+@media screen and (max-width: 850px) {
+    footer{   
+      flex-direction: column;
     }
-}
-
-@media only screen and (min-width: 500px) and (max-width:800px){
-    .image{
-        width: 30%;
-        margin: 0px 0px 0px 240px ;
-        padding-bottom: 5px;
-    }
-}
-
-@media only screen and (min-width: 1100px) {
-    .header{
-        width: 100%;
-        height:100px
-    }
-    .image-box{
-        max-width: 20%;
-        height: 120px;
-        float: left;
-    }
-    .image{
-        width: 40%;
-        text-align: end;
-        /* padding-left: 240px; */
-     }
-    .name-box{
-        width: 40%;
-        height: 120px;
-        /* background-color: blueviolet; */
-        float: left;
-    }
-    .heading-name{
-        text-align: left;
-        font-size: 45px;
-        font-family: 'Audiowide';
-        line-height: 150px;
-        
-    }
-   
-
-    .links-box{
-        width: 40%;
-        height: 120px;
-        /* background-color: lightcoral ; */
-        float: left;
-    }
-   
-    li{
-        display: inline-block;
-        line-height: 150px;
-        text-align: right;
-        padding-left: 100px;
-        margin: 0px;
-    }
-    li a{
-        font-size: 40px;
-    }
-    .clear{
-        clear: both;
-    }
-
-    .main-content{
-        padding: 40px 40px 40px 80px;
-    }
-    .footer{
-        width: 100%;
-        height: 170;
-    }
-    .contact-box{
-        width: 40%;
-        height:170;
-        /* background-color: lightpink; */
-        float: left;
-        border: 1px solid grey;
-        /* : 1px solid grey; */
-    }
-    .social-box{
-        width: 60%;
-        height: 172px;
-        /* background-color: lightslategrey; */
-        float: left;
-        border: 1px solid grey;
-    }
-    .intouch{
-        font-size: 50px;
-    }
-    .icons{
-        height: 113px;
-    }
-    .icons a{
-        font-size: 60px;
-        margin: 40px;
-        color: grey;
-    }
-
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
