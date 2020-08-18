@@ -1,126 +1,186 @@
-* {
-    box-sizing: border-box;
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html{
+  font-size: 62.5%
+}
+body{
+  margin: 0rem;
+}
+
+/* ***************************************** HEADER *********************************** */
+
+header{
+  display:flex;
+  background: rgb(238, 238, 235);
+}
+.image{
+  flex: 20%;
+  text-align: end;
+  padding: 5rem .5rem 3rem 0.5rem;
+  /* background: rgb(107, 151, 235); */
+}
+.mypic{
+  border-radius: 50%;
+}
+.name{
+  flex: 40%;
+  /* background: violet; */
+}
+.nameheading{
+  font-size: 5rem;
+  line-height: 12rem;
+  font-family: 'Audiowide';
+}
+.headerlinks{
+  flex: 40%;
+  text-align: end;
+  /* background: turquoise; */
+}
+.headerlinks a{
+  font-size: 5rem;
+  margin:0rem 2rem 0rem 4rem;
+  line-height: 18rem;
+  text-decoration: none;
+  /* color:black; */
+}
+.headerlinks a:hover{
+  color: red;
+}
+
+/* *********************************** RESPONSIVE HEADER ********************************* */
+
+@media screen and (max-width: 850px) {
+  header, .headerlinks{   
+    flex-direction: column;
   }
-  
-  html{
-      font-size: 62.5%;
+  .image{
+      text-align: center;
+      padding: 1rem .2rem;
   }
-  /* Style the body */
-  body {
-   
-    margin: 0;
+  .name{
+      flex: 40%;
+      text-align: center;
+      padding:1rem .2rem;
   }
- .blog{
-     text-align: center;
-     font-size: 4rem;
- }
-  /* Header/logo Title */
-  .header {
-    padding: .5rem;
-    text-align: center;
-    background: #1abc9c;
-    color: black;
-  }
-  .whatisblog{
+  .nameheading{
       font-size: 6rem;
+      line-height: 9rem;
   }
-  .aboutblog{
-      font-size: 3rem;
+  .headerlinks{
+      text-align: center;
   }
-  /* Style the top navigation bar */
-  .navbar {
-    display: flex;
-    background-color: #333;
+  .headerlinks a{
+     line-height: 9rem;
+     margin: 0rem 5rem 2rem 5rem;
   }
-  
-  /* Style the navigation bar links */
-  .navbar a {
-    color: white;
-    /* border: 1px solid grey; */
-    font-size: 3.5rem;
-    padding: 1.4rem 2.0rem;
-    text-decoration: none;
-    text-align: center;
-    margin:0rem auto;
-  }
-  
-  /* Change color on hover */
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Column container*/
-
-  /* .row {  
-    display: flex;
-    flex-wrap: wrap;
-  }
-   */
-  /* Create two unequal columns that sits next to each other */
-  /* Sidebar/left column */
-  /* .side {
-    flex: 30%;
-    background-color: #f1f1f1;
-    padding: 2.0rem;
-  } */
-  
-  /* Main column */
-  /* .main {
-    flex: 70%;
-    background-color: white;
-    padding: 2.0rem;
-  } */
-  
-  /* Fake image, just for this example */
-  /* .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 2rem;
-  }
-   */
-  /* Footer */
-  /* .footer {
-    padding: 2rem;
-    text-align: center;
-    background: #ddd;
-  }
-   */
-   .footer{
-     
-     background: grey;
-     text-align: center;
-     padding: 1rem;
-   }
-   .footerheading{
-     font-size: 5rem;
-     text-decoration: underline;
-   }
-  .footernavbar {
-    display: flex;
-    /* background-color: rgb(230, 52, 52); */
-
-  }
-  .footernavbar a {
-    color: white;
-    /* border: 1px solid grey; */
-    font-size: 3.5rem;
-    padding: 1.4rem 2.0rem;
-    text-decoration: none;
-    text-align: center;
-    margin:0rem auto;
-  }
-  .footernavbar a img{
-    transition: all 0.3s linear;
-}
-  .footernavbar a:hover img{
-    transform: scale(1.5);
 }
 
-   
-  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 700px) {
-    .row, .navbar,.footernavbar{   
-      flex-direction: column;
-    }
+/* ************************************ HEADER END *********************************** */
+
+/* ************************************ MAIN  *********************************** */
+.blog{
+  text-align: center;
+  font-size: 4rem;
+}
+/* Header/logo Title */
+.header {
+  padding: .5rem;
+  text-align: center;
+  background: #1abc9c;
+  color: black;
+}
+.whatisblog{
+    font-size: 6rem;
+}
+.aboutblog{
+    font-size: 3rem;
+}
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  /* border: 1px solid grey; */
+  font-size: 3.5rem;
+  padding: 1.4rem 2.0rem;
+  text-decoration: none;
+  text-align: center;
+  margin:0rem auto;
+  flex-direction: column;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+@media screen and (max-width: 700px) {
+  .navbar{   
+    flex-direction: column;
   }
+}
+/* ************************************ MAIN END *********************************** */
+
+/* ************************************ FOOTER *********************************** */
+
+footer{
+  display: flex;
+}
+.leftbox{
+  flex: 32%;
+  border-right: 0.05rem solid lightgrey;
+  background: #F1F1F1  ;
+}
+.contact-details{
+  font-family: 'Bungee Inline';
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: .5rem;
+  text-decoration: underline;
+}
+.lefticon{
+  display: flex;
+  text-align: center;
+}
+
+.lefticon img{
+  margin: 0rem 5rem 1rem 5rem;
+}
+.lefticon img{
+ transition: all 0.3s linear;
+}
+.lefticon img:hover{
+  transform: scale(1.5);
+}
+
+
+.rightbox{
+  flex: 58%;
+  background: #F3F5F5 ;
+}
+.intouch{
+  font-family: 'Bungee Inline';
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: .5rem;
+  /* word-spacing: .5rem; */
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 850px) {
+  footer,.lefticon{   
+    flex-direction: column;
+  }
+
+}
+
+/* *********************************** FOOTER END ******************************  */
+

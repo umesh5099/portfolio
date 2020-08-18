@@ -7,6 +7,7 @@ html{
 }
 body{
     margin: 0rem;
+    background: #585c68;
 }
 
 /* ***************************************** HEADER *********************************** */
@@ -15,7 +16,7 @@ header{
     display:flex;
     background: rgb(238, 238, 235);
 }
-.image{
+.headerimage{
     flex: 20%;
     text-align: end;
     padding: 5rem .5rem 3rem 0.5rem;
@@ -41,7 +42,7 @@ header{
 .headerlinks a{
     font-size: 5rem;
     margin:0rem 2rem 0rem 4rem;
-    line-height: 18rem;
+    line-height: 22rem;
     text-decoration: none;
     /* color:black; */
 }
@@ -81,123 +82,29 @@ header{
 
 /* ************************************ MAIN  *********************************** */
 
-main{
+.resume{
+    width: 80rem;
+    height: auto;
     display: flex;
+    margin:5rem auto;
 }
-.headings{
-    font-family: 'Average Sans';
-    font-size: 5rem;
-    text-align: start;
-    padding-left: 3rem;
-    background-color: linen;
+.resume .resume-left{
+    width: 28rem;
+    background: #0bb5f4;
 }
-.careercontent{
-    font-size: 3.5rem;
-    font-family: 'Average Sans';
-    padding-left: 3rem;
-    padding-right: 2rem;
+.resume .resume-left .image{
+    width: 100%;
+    height: 28rem;
 }
-table{
-    width: 98.5%;
-     height: 20rem;
-     margin: 0rem 1rem 2rem 1rem;
+.resume .resume-left .image .myimage{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
 }
-th{
-    font-size: 3rem;
-    background-color: linen;
-}
-.institutename{
-    color: #414140 ;
-    font-weight: bold;
-    background-color: linen;
-}
-td{
-    font-size: 3rem;
-    text-align: center;
-}
-
-/* *********************************unordered list :none  ******************************** */
-
-ul{
-    display: none;
-}
-
-/* *********************************unordered list :none  ******************************** */
-
-.tabledetails{
-    text-align: left;
-}
-
-.hobby{
-    display: block;
-    list-style-type: none;
-}
-.hobbycontent{
-    font-size: 3.5rem;
-    padding-left: 2rem;
-    font-family: 'Average Sans';
-}
-
-
-@media screen and (max-width: 850px) {
-    table{
-        display: none;
-    }
-    
-    ul{
-        display: block;
-    }
-   
-    ul li{
-        font-size: 4rem;
-        font-weight: bold;
-        color: black ;
-    }
-    .instdetails{
-        font-size: 2.5rem;
-        color: #414140 ;
-        font-weight: normal;
-        list-style-type: none;
-    }
-    .instdetails1{
-        font-size: 2.3rem;
-        color: #414140 ;
-        font-weight: normal;
-        list-style-type: none;
-        
-    }
-    .hobbycontent{
-        font-size: 3.5rem;
-        /* padding-left: 2rem; */
-        font-family: 'Average Sans';
-        font-weight: normal;
-    }
-    
-}
-
-/* 
-@media screen and (max-width: 500px) {
-    table{
-        width: 35.8rem;
-         height:5rem;
-         margin: 0rem 3rem 2rem 1rem;
-    }
-    th{
-        font-size: 1rem;
-    }
-    .institutename{
-        color: #414140 ;
-        font-weight: bold;
-    }
-    td{
-        font-size: 1rem;
-        text-align: center;
-    }
-   
-} */
 /* ************************************ MAIN END *********************************** */
 
 /* ************************************ FOOTER *********************************** */
+
 
 footer{
     display: flex;
@@ -207,47 +114,171 @@ footer{
     border-right: 0.05rem solid lightgrey;
     background: #F1F1F1  ;
 }
-.contact-details{
-    font-family: 'Bungee Inline';
-    font-size: 4rem;
-    text-align: center;
-    letter-spacing: .5rem;
-    text-decoration: underline;
-}
-.lefticon{
-    text-align: center;
-}
 
-.lefticon img{
-    margin: 0rem 5rem 1rem 5rem;
-}
-.lefticon img{
-   transition: all 0.3s linear;
-}
-.lefticon img:hover{
-    transform: scale(1.5);
- }
- 
 
- .rightbox{
+.rightbox{
     flex: 58%;
     background: #F3F5F5 ;
 }
-.intouch{
-    font-family: 'Bungee Inline';
-    font-size: 4rem;
+
+.social-icons a{
+    width:6rem;
+    height:6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:#e6e3e3; */
+    margin:4rem auto;
+    border-radius:50%;
+    font-size: 7rem;
+   }
+   .social-icons{
+    display: flex;
     text-align: center;
-    letter-spacing: .5rem;
-    /* word-spacing: .5rem; */
-    text-decoration: underline;
-}
+    
+   }
+   /* .social-icons a:hover{
+    box-shadow:0.2rem 0.2rem 1.2rem rgba(0,0,0,0.2);
+   } */
+   .fa-facebook-f{
+    transition: all 0.3s linear;
+
+   }
+   .fa-facebook-f:hover{
+       transform: scale(1.8);
+   }
+   .fa-twitter{
+    transition: all 0.3s linear;
+
+   }
+   .fa-twitter:hover{
+       transform: scale(1.5);
+   }
+   .fa-instagram{
+    transition: all 0.3s linear;
+
+   }
+   .fa-instagram:hover{
+       transform: scale(1.5);
+   }
+   .fa-linkedin{
+    transition: all 0.3s linear;
+
+   }
+   .fa-linkedin:hover{
+       transform: scale(1.5);
+   }
+   .fa-github{
+    transition: all 0.3s linear;
+
+   }
+   .fa-github:hover{
+       transform: scale(1.5);
+   }
+   .fa-envelope{
+    transition: all 0.3s linear;
+
+   }
+   .fa-envelope:hover{
+       transform: scale(1.5);
+   }
+   .fa-telegram{
+    transition: all 0.3s linear;
+
+   }
+   .fa-telegram:hover{
+       transform: scale(1.5);
+   }
+   .fa-whatsapp{
+    transition: all 0.3s linear;
+
+   }
+   .fa-whatsapp:hover{
+       transform: scale(1.5);
+   }
+   .fa-home{
+    transition: all 0.3s linear;
+
+   }
+   .fa-home:hover{
+       transform: scale(1.5);
+   }
+
+
+
+   .social-icons a:hover i{
+    color:#FFFFFF;
+    /* transform:scale(0.5s); */
+   }
+
 
 @media screen and (max-width: 850px) {
-    footer{   
+    footer,.social-icons{   
       flex-direction: column;
     }
 
 }
 
 /* *********************************** FOOTER END ******************************  */
+
+.social{
+    position: fixed;
+    top:50%;
+    right:0px;
+    transform:translateY(-50%);
+   }
+   .social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:4rem;
+    height:4rem;
+    margin:0rem;
+    padding: 0rem;
+    line-height:0rem;
+    background-color:#FFFFFF;
+    border:1px solid #CBCBCB;
+    box-shadow:0.2rem 0.2rem 1.2rem rgba(0,0,0,0.2);
+   }
+   .social a:hover{
+    background-color:#ee7d96;
+    transition:all ease 0.5s;
+   }
+   .social i{
+    font-size:2rem;
+    color:#2B2B2B;
+   }
+   .social a:hover i{
+    color:black;
+    transition:all ease 0.2s;
+   }
+
+   /* *********************************** home left links ****************************** */ 
+
+   .home-left{
+       position: fixed;
+       top: 50%;
+       left: 0rem;
+       transform: translateY(-50%);
+    }
+    .home-left a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        margin: 0rem;
+        line-height: 0rem;
+        background-color:#FFFFFF;
+        border:1px solid #CBCBCB;
+        box-shadow: 0.2rem 0.2rem 1.2rem rgba(0,0,0,0.2);
+    }
+    .home-left a:hover{
+        background-color: #fa7474;;
+        transition: all ease 0.5s;
+    }
+    .home-left i{
+        font-size: 2rem;
+        color:#2B2B2B;
+    }
 
