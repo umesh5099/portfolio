@@ -9,11 +9,18 @@ body{
     margin: 0rem;
 }
 
+.bgimage{
+    background-image: url(file:///home/umesh/Desktop/bootstrap/resource/background.jpeg);
+    background-size: 100% 100%;
+    width: 100%;
+    height:100%;
+
+}
 /* ***************************************** HEADER *********************************** */
 
 header{
     display:flex;
-    background-color: rgb(238, 238, 235);
+    background-color: rgba(255, 255, 255,0.7);
 }
 .image{
     flex: 20%;
@@ -22,17 +29,18 @@ header{
 }
 .mypic{
     border-radius: 50%;
-    box-shadow: .6rem .6rem 1rem -.1rem rgba(0,0,0,0.15),
-    -.6rem -.6rem 1rem -.1rem rgba(255,255,255,0.7);
+    /* box-shadow: .6rem .6rem 1rem -.1rem rgba(0,0,0,0.15),
+    -.6rem -.6rem 1rem -.1rem rgba(255,255,255,0.7); */
 }
 .name{
     flex: 40%;
 }
 .nameheading{
     font-size: 5rem;
+    letter-spacing: .2rem;
     line-height: 12rem;
     font-family: 'Audiowide';
-    background-color: rgb(238, 238, 235);
+    background-color: rgba(238, 238, 235,0.5);
     box-shadow: .6rem .6rem 1rem -.1rem rgba(0,0,0,0.15),
                 -.6rem -.6rem 1rem -.1rem rgba(255,255,255,0.7),
                 inset .6rem .6rem 1rem -.1rem rgba(255,255,255,0.15);
@@ -42,10 +50,10 @@ header{
     text-align: end;
 }
 .headerlinks a{
-    /* background-color: royalblue; */
-    font-size: 4rem;
+    /* background-color: black; */
+    font-size: 2.5rem;
     margin:0rem 2rem 0rem 4rem;
-    line-height: 22rem;
+    line-height: 23rem;
     text-decoration: none;
     color: black;
     font-family: 'Heebo', sans-serif;;
@@ -55,7 +63,7 @@ header{
 }
 .headerlinks a:hover{
     color: red;
-    font-size: 3.8rem;
+    font-size: 2.3rem;
     box-shadow: inset .4rem .4rem .6rem -.1rem rgba(0,0,0,0.2),
                inset -.4rem -.4rem 6rem -.1rem rgba(255,255,255,0.7),
                -0.05rem -0.05rem 0rem rgba(255,255,255,1),
@@ -97,16 +105,25 @@ header{
 /* ************************************ MAIN  *********************************** */
 
 main{
+    /* background-image: url(file:///home/umesh/Desktop/bootstrap/resource/background.jpeg);
+    background-size: 100% 100%;
+    width: 100%;
+    height:100%; */
+
     display: flex;
     text-align: center;
     padding-left: 5.5rem;
     padding-right: 5.5rem;
+
 }
 
 main p{
+    background: rgba(255,255,255,0.5);
     font-family: 'Average Sans';
     font-size: 3.5rem;
-    color: black;
+    letter-spacing: .2rem;
+    color: #030303;
+    padding: 1rem 0;
 }
 
 /* ************************************ MAIN END *********************************** */
@@ -115,17 +132,19 @@ main p{
 
 footer{
     display: flex;
+    background-color: rgba(255, 255, 255,0.7);
 }
 .leftbox{
     flex: 32%;
     border-right: 0.05rem solid lightgrey;
-    background: #F1F1F1  ;
+    /* background: black ;
+    opacity: 0.8; */
 }
 
 
 .rightbox{
     flex: 58%;
-    background: #F3F5F5 ;
+    /* background: #F3F5F5 ; */
 }
 
 .social-icons a{
@@ -134,11 +153,11 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#F3F5F5;
+    /* background-color:#F3F5F5; */
     margin:4rem auto;
     /* border-radius:50%; */
     font-size: 4.5rem;
-    box-shadow: .6rem .6rem 1rem -.1rem rgba(255,255,255,0.7),
+    box-shadow: .6rem .6rem 1rem -.1rem rgba(6,6,6,0.7),
                 -.6rem -.6rem 1rem -.1rem rgba(0,0,0,0.15),
                 -.6rem -.6rem 1rem -.1rem rgba(255,255,255,0.15);;
    }
