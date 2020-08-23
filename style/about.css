@@ -7,47 +7,61 @@ html{
 }
 body{
     margin: 0rem;
-    background: #585c68;
 }
 
 /* ***************************************** HEADER *********************************** */
 
 header{
     display:flex;
-    background: rgb(238, 238, 235);
+    background-color: rgb(238, 238, 235);
 }
-.headerimage{
+.image{
     flex: 20%;
     text-align: end;
     padding: 5rem .5rem 3rem 0.5rem;
-    /* background: rgb(107, 151, 235); */
 }
 .mypic{
     border-radius: 50%;
+    box-shadow: .6rem .6rem 1rem -.1rem rgba(0,0,0,0.15),
+    -.6rem -.6rem 1rem -.1rem rgba(255,255,255,0.7);
 }
 .name{
     flex: 40%;
-    /* background: violet; */
 }
 .nameheading{
     font-size: 5rem;
     line-height: 12rem;
     font-family: 'Audiowide';
+    background-color: rgb(238, 238, 235);
+    box-shadow: .6rem .6rem 1rem -.1rem rgba(0,0,0,0.15),
+                -.6rem -.6rem 1rem -.1rem rgba(255,255,255,0.7),
+                inset .6rem .6rem 1rem -.1rem rgba(255,255,255,0.15);
 }
 .headerlinks{
     flex: 40%;
     text-align: end;
-    /* background: turquoise; */
 }
 .headerlinks a{
-    font-size: 5rem;
+    /* background-color: royalblue; */
+    font-size: 4rem;
     margin:0rem 2rem 0rem 4rem;
     line-height: 22rem;
     text-decoration: none;
-    /* color:black; */
+    color: black;
+    font-family: 'Heebo', sans-serif;;
+    box-shadow: .6rem .6rem 1rem -.1rem rgba(255,255,255,0.7),
+                -.6rem -.6rem 1rem -.1rem rgba(0,0,0,0.15);
+    border:0.1rem solid rgba(0,0,0,0);
 }
 .headerlinks a:hover{
     color: red;
+    font-size: 3.8rem;
+    box-shadow: inset .4rem .4rem .6rem -.1rem rgba(0,0,0,0.2),
+               inset -.4rem -.4rem 6rem -.1rem rgba(255,255,255,0.7),
+               -0.05rem -0.05rem 0rem rgba(255,255,255,1),
+               0.05rem 0.05rem 0rem rgba(0,0,0,0.15),
+               0rem 1.2rem 1rem -1rem rgba(0,0,0,0.05);
+    border: .1rem solid rgba(0,0,0,0.01);
 }
 
 /* *********************************** RESPONSIVE HEADER ********************************* */
@@ -58,7 +72,7 @@ header{
     }
     .image{
         text-align: center;
-        padding: 1rem .2rem;
+        padding: 3rem .2rem .5rem .2rem;
     }
     .name{
         flex: 40%;
@@ -66,15 +80,15 @@ header{
         padding:1rem .2rem;
     }
     .nameheading{
-        font-size: 6rem;
-        line-height: 9rem;
+        font-size: 5rem;
+        line-height: 8rem;
     }
     .headerlinks{
         text-align: center;
     }
     .headerlinks a{
        line-height: 9rem;
-       margin: 0rem 5rem 2rem 5rem;
+       margin: 0rem 5rem 0rem 5rem;
     }
 }
 
@@ -82,29 +96,223 @@ header{
 
 /* ************************************ MAIN  *********************************** */
 
-.resume{
-    width: 80rem;
-    height: auto;
+main{
     display: flex;
-    margin:5rem auto;
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: palegreen;
 }
-.resume .resume-left{
-    width: 28rem;
-    background: #0bb5f4;
+.main-left{
+    flex: 34%;
+    background-color: #F4F3F2 ;
 }
-.resume .resume-left .image{
+.resumeimg{
     width: 100%;
-    height: 28rem;
+    border-radius: 50%;
+    padding: 1rem;
 }
-.resume .resume-left .image .myimage{
+.myname{
+    text-align: center;
+    font-size: 8rem;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+    margin: 0;
+}
+.personal-info i{
+    text-align: left;
+    color: black;
+    font-size: 2.5rem;
+    padding: 3rem 0rem 0.8rem 2rem;
+}
+.personal_info_right{
+    font-size: 2.5rem;
+    color: brown;
+    font-weight: normal;
+}
+.education{
+    padding-left: 2rem;
+    letter-spacing: .4rem;
+    word-spacing: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+    text-decoration: underline;
+}
+
+.education1{
+    font-size:2.5rem ;
+    color: brown;
+
+}
+.educationskills li{
+    font-size: 6rem;
+    margin-left: 2.5rem;
+}
+
+.main-right{
+    flex: 66%;
+    background-color: #F4F3F2;
+    border-left: .01rem solid lightgrey;
+}
+
+
+.careerobj{
+    padding: 1rem 1rem 0rem 1rem;
+    margin-bottom: 0;
+    letter-spacing: .4rem;
+    word-spacing: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+    text-decoration: underline;
+}
+.aboutpara{
+    margin-top: 0;
+    padding: 1rem 1rem 0rem 1rem;
+    font-size: 3.5rem;
+    color: brown;
+    font-family: 'Libre Caslon Display', serif;
+    letter-spacing: .2rem;
+}
+
+.skills li{
+    font-size: 6rem;
+    margin-left: 2.5rem;
+}
+.fa-html5{
+    color: rgb(243, 98, 62);
+
+}
+.fa-js{
+    color: orangered;
+}
+.fa-bootstrap{
+    color: rgb(57, 221, 57);
+}
+.fa-css3{
+    color: palevioletred;
+}
+.fa-python{
+    color: purple;
+}
+
+.container {
     width: 100%;
-    height: 100%;
-    /* border-radius: 50%; */
+    height: 2rem;
+    background-color: #ddd;
+    border-radius: .5rem;
+}
+  
+.skillbar {
+    text-align: center;
+    color: white;
+    border-radius: .5rem;
+}
+.js {
+    width: 65%;
+    background-color: #2196F3;
+}
+
+.html {
+    width: 90%;
+     background-color: #2196F3;
+}
+
+.css {
+    width: 80%; 
+    background-color: #2196F3;
+}
+
+.bootstrap {
+    width: 60%;
+     background-color: #2196F3;
+}
+
+.python {
+    width: 60%;
+     background-color: #2196F3;
+}
+
+.skillper{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+
+
+.projects li{
+    font-size: 4rem;
+}
+.prjoect-content{
+    margin-top: 0;
+    font-size: 3.5rem;
+    color: brown;
+    letter-spacing: .2rem;
+    font-family: 'Libre Caslon Display', serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* **************************** RESPONSIVE MAIN ******************************** */
+
+
+@media screen and (max-width: 850px) {
+    main{   
+      flex-direction: column;
+      width: 75%;
+    }
+    .personal-info i{
+        font-size: 2rem;
+        padding: 3rem 0rem 0.8rem 0.5rem;
+    }
+    .personal_info_right{
+        font-size: 2rem;
+    }
+    .educationskills li{
+        font-size: 6rem;
+        margin-left: 1rem;
+    }
+    .skills li{
+        margin-left: 1rem;
+    }
+    .main-right{
+        border-left: none;
+    }
+    
+
+    
+  
 }
 /* ************************************ MAIN END *********************************** */
 
 /* ************************************ FOOTER *********************************** */
-
 
 footer{
     display: flex;
@@ -127,27 +335,36 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color:#e6e3e3; */
+    background-color:#F3F5F5;
     margin:4rem auto;
-    border-radius:50%;
-    font-size: 7rem;
+    /* border-radius:50%; */
+    font-size: 4.5rem;
+    box-shadow: .6rem .6rem 1rem -.1rem rgba(255,255,255,0.7),
+                -.6rem -.6rem 1rem -.1rem rgba(0,0,0,0.15),
+                -.6rem -.6rem 1rem -.1rem rgba(255,255,255,0.15);;
    }
    .social-icons{
     display: flex;
     text-align: center;
     
    }
-   /* .social-icons a:hover{
-    box-shadow:0.2rem 0.2rem 1.2rem rgba(0,0,0,0.2);
-   } */
-   .fa-facebook-f{
+   .social-icons a:hover{
+    box-shadow: inset 0.2rem 0.2rem 1.2rem rgba(0,0,0,0.2),
+                inset -0.2rem -0.2rem 1.2rem rgba(255,255,255,0.4);;
+    font-size: 3rem;
+   }
+   /* .fa-facebook-f{
     transition: all 0.3s linear;
 
    }
    .fa-facebook-f:hover{
        transform: scale(1.8);
-   }
-   .fa-twitter{
+   } */
+
+   /* .fa-facebook-f:hover{
+       color: sienna;
+   } */
+   /* .fa-twitter{
     transition: all 0.3s linear;
 
    }
@@ -202,7 +419,7 @@ footer{
    }
    .fa-home:hover{
        transform: scale(1.5);
-   }
+   } */
 
 
 
@@ -252,6 +469,74 @@ footer{
     color:black;
     transition:all ease 0.2s;
    }
+
+
+   .social .fa-facebook-f{
+    transition: all 0.3s linear;
+
+   }
+   .social .fa-facebook-f:hover{
+       transform: scale(1.5);
+   } 
+
+  
+    .social .fa-twitter{
+    transition: all 0.3s linear;
+
+   }
+    .social .fa-twitter:hover{
+       transform: scale(1.5);
+   }
+   .social .fa-instagram{
+    transition: all 0.3s linear;
+
+   }
+   .social .fa-instagram:hover{
+       transform: scale(1.5);
+   }
+   .social .fa-linkedin{
+    transition: all 0.3s linear;
+
+   }
+   .social .fa-linkedin:hover{
+       transform: scale(1.5);
+   }
+   .social .fa-github{
+    transition: all 0.3s linear;
+
+   }
+   .social .fa-github:hover{
+       transform: scale(1.5);
+   }
+   .social .fa-envelope{
+    transition: all 0.3s linear;
+
+   }
+   .social .fa-envelope:hover{
+       transform: scale(1.5);
+   }
+   .social .fa-telegram{
+    transition: all 0.3s linear;
+
+   }
+   .social .fa-telegram:hover{
+       transform: scale(1.5);
+   }
+   .social .fa-whatsapp{
+    transition: all 0.3s linear;
+
+   }
+   .social .fa-whatsapp:hover{
+       transform: scale(1.5);
+   }
+   .home-left .fa-home{
+    transition: all 0.3s linear;
+
+   }
+   .home-left .fa-home:hover{
+       transform: scale(1.5);
+   }
+
 
    /* *********************************** home left links ****************************** */ 
 

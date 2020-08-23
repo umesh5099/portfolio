@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* by default it is 16px, 100%=16px.....1px=6.25%... therefore 10px=62.5% */
+    font-size: 62.5%; 
+}
+/* body{
+    background: url(notebook.png);
+} */
+
+header{
+    display:flex;
+    background-color: rgb(238, 238, 235);
+}
+.image{
+    flex: 20%;
+    text-align: end;
+    padding: 5rem .5rem 3rem 0.5rem;
+}
+.mypic{
+    border-radius: 50%;
+    box-shadow: .6rem .6rem 1rem -.1rem rgba(0,0,0,0.15),
+    -.6rem -.6rem 1rem -.1rem rgba(255,255,255,0.7);;
+}
+.name{
+    flex: 40%;
+}
+.nameheading{
+    margin-top: 5rem;
+    font-size: 5rem;
+    line-height: 12rem;
+    font-family: 'Audiowide';
+    background-color: rgb(238, 238, 235);
+    box-shadow: .6rem .6rem 1rem -.1rem rgba(0,0,0,0.15),
+                -.6rem -.6rem 1rem -.1rem rgba(255,255,255,0.7),
+                inset .6rem .6rem 1rem -.1rem rgba(255,255,255,0.15);
+}
+.headerlinks{
+    flex: 40%;
+    text-align: end;
+}
+.headerlinks a{
+    /* background-color: royalblue; */
+    font-size: 4rem;
+    margin:0rem 2rem 0rem 4rem;
+    line-height: 22rem;
+    text-decoration: none;
+    color: black;
+    font-family: 'Heebo', sans-serif;;
+    box-shadow: .6rem .6rem 1rem -.1rem rgba(255,255,255,0.7),
+                -.6rem -.6rem 1rem -.1rem rgba(0,0,0,0.15);
+    border:0.1rem solid rgba(0,0,0,0);
+}
+.headerlinks a:hover{
+    color: red;
+    font-size: 3.8rem;
+    box-shadow: inset .4rem .4rem .6rem -.1rem rgba(0,0,0,0.2),
+               inset -.4rem -.4rem 6rem -.1rem rgba(255,255,255,0.7),
+               -0.05rem -0.05rem 0rem rgba(255,255,255,1),
+               0.05rem 0.05rem 0rem rgba(0,0,0,0.15),
+               0rem 1.2rem 1rem -1rem rgba(0,0,0,0.05);
+    border: .1rem solid rgba(0,0,0,0.01);
+}
+
+/* *********************************** RESPONSIVE HEADER ********************************* */
+
+@media screen and (max-width: 850px) {
+    header, .headerlinks{   
+      flex-direction: column;
+    }
+    .image{
+        text-align: center;
+        padding: 3rem .2rem .5rem .2rem;
+    }
+    .name{
+        flex: 40%;
+        text-align: center;
+        padding:1rem .2rem;
+    }
+    .nameheading{
+        font-size: 5rem;
+        line-height: 8rem;
+    }
+    .headerlinks{
+        text-align: center;
+    }
+    .headerlinks a{
+       line-height: 9rem;
+       margin: 0rem 5rem 0rem 5rem;
+    }
+}
+
+
+
+
+.header1{
+    height:auto;
+    width: 80%;
+    margin: 50px auto 0 auto;
+}
+
+.heading{
+    font-size: 5.5rem;
+    padding-left: 1.0rem;
+    font-family: 'Cantarell';
+}
+
+.para{
+    font-size: 2.5rem;
+    padding-left: 1.5rem;
+    font-family: 'Content';
+    /* font-weight: bold; */
+    color: lightslategray;
+}
+.main{
+    background-color: none;
+    width: 80%;
+    height: 401.0rem;
+    margin-left: 13.0rem;
+    position: relative;
+}
+.mainleft1{
+    background-color: rgb(90, 240, 110);
+    height:auto;
+    width: 62%;
+    padding-left: 2.5rem;
+    margin-bottom: 1.0rem;
+    left: 0;
+    position: absolute;
+}
+
+.heading1{
+    font-size: 4.5rem;
+    font-family: 'Cantarell';
+}
+.image1{
+    width: 95%;
+}
+.para1{
+    font-family: 'Content';
+    font-size: 2.5rem;
+    padding-right: 3.0rem;
+}
+hr{
+    margin-right: 3.0rem;
+}
+/* .para2{
+    font-family: 'Content';
+    font-size: 2.5rem;
+    padding-right: 3.0rem;
+} */
+/* .heading2{
+    font-size: 3.5rem;
+    font-family: 'Cantarell';
+} */
+
+/* .para3{
+    font-family: 'Content';
+    font-size: 2.5rem;
+    padding-right: 3.0rem;
+} */
+.para4{
+    font-family: 'Cormorant Upright';
+    font: lightgrey;
+}
+/* .heading3{
+    font-size: 3.5rem;
+    font-family: 'Cantarell';
+} */
+
+.para5{
+    font-family: 'Cormorant Upright';
+    font: lightgrey;
+    padding-right: 2.0rem;
+
+}
+h3{
+    padding-left: 13.0rem;
+}
+span{
+    color: red;
+}
+
+.mainright{
+    background-color: rgb(130, 84, 238);
+    width: 34%;
+    height: 100rem;
+    right: 0;
+    position: absolute;
+    /* border-left: lightgrey; */
+    
+}
+.image-right{
+    width: 65%;
+    padding-left:6rem;
+    padding-top: 2rem;
+    padding-right: 6rem; 
+}
+.para-right1{
+    font-family: 'Cormorant Upright';
+    font: lightgrey;
+    margin-left: 2.5rem ;
+    margin-right: 2.5rem;
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+.para-right2{
+    font-family: 'Content';
+    font: lightgrey;
+    margin-left: 1.5rem ;
+    margin-right: 1.5rem;
+
+    font-weight: bold;
+    font-size: 4.0rem;
+    text-decoration: underline;
+}
+.anchor{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 2.5rem;
+    font-size: 2.0rem;
+}
+
+
+a{
+    font-size: 40px;
+    margin: 20px;
+    /* color: grey; */
+}
+a img{
+    transition: all 0.3s linear;
+    color: coral;
+}
+a:hover img{
+    transform: scale(1.5);
+}
+img .linkedin{
+    color: coral;
+}
+
+
+
+.vertical-rule{
+    border-left: .3rem solid lightgrey;
+    height: 12.0rem;
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+}
+.author, .quote{
+    font-family: 'content';font-size: 2.2rem;
+    font: lightgrey;
+    margin-left: 1.5rem ;
+    margin-right: 1.5rem;
+  
+    
+}
