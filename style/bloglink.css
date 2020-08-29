@@ -1,186 +1,460 @@
-*{
-  box-sizing: border-box;
-  text-decoration: none;
+* {
+    box-sizing: border-box;
+    text-decoration: none;
 }
-html{
-  font-size: 62.5%
+
+html {
+    font-size: 62.5%
 }
-body{
-  margin: 0rem;
+
+body {
+    margin: 0rem;
 }
+
+
+/* .bgimage {
+    background-image: url(https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+} */
+
 
 /* ***************************************** HEADER *********************************** */
 
-header{
-  display:flex;
-  background: rgb(238, 238, 235);
+header {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.7);
 }
-.image{
-  flex: 20%;
-  text-align: end;
-  padding: 5rem .5rem 3rem 0.5rem;
-  /* background: rgb(107, 151, 235); */
+
+.image {
+    flex: 20%;
+    text-align: end;
+    padding: 5rem .5rem 3rem 0.5rem;
 }
-.mypic{
-  border-radius: 50%;
+
+.mypic {
+    border-radius: 50%;
+    /* box-shadow: .6rem .6rem 1rem -.1rem rgba(0,0,0,0.15),
+  -.6rem -.6rem 1rem -.1rem rgba(255,255,255,0.7); */
 }
-.name{
-  flex: 40%;
-  /* background: violet; */
+
+.name {
+    flex: 40%;
 }
-.nameheading{
-  font-size: 5rem;
-  line-height: 12rem;
-  font-family: 'Audiowide';
+
+.nameheading {
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    line-height: 12rem;
+    font-family: 'Audiowide';
+    background-color: rgba(238, 238, 235, 0.5);
+    box-shadow: .6rem .6rem 1rem -.1rem rgba(0, 0, 0, 0.15), -.6rem -.6rem 1rem -.1rem rgba(255, 255, 255, 0.7), inset .6rem .6rem 1rem -.1rem rgba(255, 255, 255, 0.15);
 }
-.headerlinks{
-  flex: 40%;
-  text-align: end;
-  /* background: turquoise; */
+
+.headerlinks {
+    flex: 40%;
+    text-align: end;
 }
-.headerlinks a{
-  font-size: 5rem;
-  margin:0rem 2rem 0rem 4rem;
-  line-height: 18rem;
-  text-decoration: none;
-  /* color:black; */
+
+.headerlinks a {
+    /* background-color: black; */
+    font-size: 2.5rem;
+    margin: 0rem 2rem 0rem 4rem;
+    line-height: 23rem;
+    text-decoration: none;
+    color: black;
+    font-family: 'Heebo', sans-serif;
+    ;
+    box-shadow: .6rem .6rem 1rem -.1rem rgba(255, 255, 255, 0.7), -.6rem -.6rem 1rem -.1rem rgba(0, 0, 0, 0.15);
+    border: 0.1rem solid rgba(0, 0, 0, 0);
 }
-.headerlinks a:hover{
-  color: red;
+
+.headerlinks a:hover {
+    color: red;
+    font-size: 2.3rem;
+    box-shadow: inset .4rem .4rem .6rem -.1rem rgba(0, 0, 0, 0.2), inset -.4rem -.4rem 6rem -.1rem rgba(255, 255, 255, 0.7), -0.05rem -0.05rem 0rem rgba(255, 255, 255, 1), 0.05rem 0.05rem 0rem rgba(0, 0, 0, 0.15), 0rem 1.2rem 1rem -1rem rgba(0, 0, 0, 0.05);
+    border: .1rem solid rgba(0, 0, 0, 0.01);
 }
+
 
 /* *********************************** RESPONSIVE HEADER ********************************* */
 
 @media screen and (max-width: 850px) {
-  header, .headerlinks{   
-    flex-direction: column;
-  }
-  .image{
-      text-align: center;
-      padding: 1rem .2rem;
-  }
-  .name{
-      flex: 40%;
-      text-align: center;
-      padding:1rem .2rem;
-  }
-  .nameheading{
-      font-size: 6rem;
-      line-height: 9rem;
-  }
-  .headerlinks{
-      text-align: center;
-  }
-  .headerlinks a{
-     line-height: 9rem;
-     margin: 0rem 5rem 2rem 5rem;
-  }
+    header,
+    .headerlinks {
+        flex-direction: column;
+    }
+    .image {
+        text-align: center;
+        padding: 3rem .2rem .5rem .2rem;
+    }
+    .name {
+        flex: 40%;
+        text-align: center;
+        padding: 1rem .2rem;
+    }
+    .nameheading {
+        font-size: 5rem;
+        line-height: 8rem;
+    }
+    .headerlinks {
+        text-align: center;
+    }
+    .headerlinks a {
+        line-height: 9rem;
+        margin: 0rem 5rem 0rem 5rem;
+    }
 }
+
 
 /* ************************************ HEADER END *********************************** */
 
+
 /* ************************************ MAIN  *********************************** */
-.blog{
-  text-align: center;
-  font-size: 4rem;
+
+main {
+    width: 90%;
+    margin: 0rem auto;
 }
+
+.blog {
+    text-align: center;
+    font-size: 4rem;
+}
+
+
 /* Header/logo Title */
+
 .header {
-  padding: .5rem;
-  text-align: center;
-  background: #1abc9c;
-  color: black;
+    padding: .5rem;
+    text-align: center;
+    background: #1abc9c;
+    color: black;
 }
-.whatisblog{
-    font-size: 6rem;
+
+.whatisblog {
+    font-size: 4rem;
 }
-.aboutblog{
-    font-size: 3rem;
+
+.aboutblog {
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    line-height: 3rem;
 }
+
+
 /* Style the top navigation bar */
+
 .navbar {
-  display: flex;
-  background-color: #333;
+    display: flex;
+    background-color: #333;
 }
+
 
 /* Style the navigation bar links */
+
 .navbar a {
-  color: white;
-  /* border: 1px solid grey; */
-  font-size: 3.5rem;
-  padding: 1.4rem 2.0rem;
-  text-decoration: none;
-  text-align: center;
-  margin:0rem auto;
-  flex-direction: column;
+    color: white;
+    /* border: 1px solid grey; */
+    font-size: 3rem;
+    padding: 1.4rem 2.0rem;
+    text-decoration: none;
+    text-align: center;
+    margin: 0rem auto;
+    flex-direction: column;
 }
+
 
 /* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
 
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
 
 @media screen and (max-width: 700px) {
-  .navbar{   
-    flex-direction: column;
-  }
+    main {
+        width: 77%;
+    }
+    .navbar {
+        flex-direction: column;
+    }
 }
+
+
 /* ************************************ MAIN END *********************************** */
+
 
 /* ************************************ FOOTER *********************************** */
 
-footer{
-  display: flex;
-}
-.leftbox{
-  flex: 32%;
-  border-right: 0.05rem solid lightgrey;
-  background: #F1F1F1  ;
-}
-.contact-details{
-  font-family: 'Bungee Inline';
-  font-size: 4rem;
-  text-align: center;
-  letter-spacing: .5rem;
-  text-decoration: underline;
-}
-.lefticon{
-  display: flex;
-  text-align: center;
+footer {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
-.lefticon img{
-  margin: 0rem 5rem 1rem 5rem;
+.leftbox {
+    flex: 32%;
+    border-right: 0.05rem solid lightgrey;
+    /* background: black ;
+  opacity: 0.8; */
 }
-.lefticon img{
- transition: all 0.3s linear;
+
+.rightbox {
+    flex: 58%;
+    /* background: #F3F5F5 ; */
 }
-.lefticon img:hover{
-  transform: scale(1.5);
+
+.social-icons a {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:#F3F5F5; */
+    margin: 4rem auto;
+    /* border-radius:50%; */
+    font-size: 4.5rem;
+    box-shadow: .6rem .6rem 1rem -.1rem rgba(6, 6, 6, 0.7), -.6rem -.6rem 1rem -.1rem rgba(0, 0, 0, 0.15), -.6rem -.6rem 1rem -.1rem rgba(255, 255, 255, 0.15);
+    ;
+}
+
+.social-icons {
+    display: flex;
+    text-align: center;
+}
+
+.social-icons a:hover {
+    box-shadow: inset 0.2rem 0.2rem 1.2rem rgba(0, 0, 0, 0.2), inset -0.2rem -0.2rem 1.2rem rgba(255, 255, 255, 0.4);
+    ;
+    font-size: 3rem;
 }
 
 
-.rightbox{
-  flex: 58%;
-  background: #F3F5F5 ;
-}
-.intouch{
-  font-family: 'Bungee Inline';
-  font-size: 4rem;
-  text-align: center;
-  letter-spacing: .5rem;
-  /* word-spacing: .5rem; */
-  text-decoration: underline;
+/* .fa-facebook-f{
+  transition: all 0.3s linear;
+
+ }
+ .fa-facebook-f:hover{
+     transform: scale(1.8);
+ } */
+
+
+/* .fa-facebook-f:hover{
+     color: sienna;
+ } */
+
+
+/* .fa-twitter{
+  transition: all 0.3s linear;
+
+ }
+ .fa-twitter:hover{
+     transform: scale(1.5);
+ }
+ .fa-instagram{
+  transition: all 0.3s linear;
+
+ }
+ .fa-instagram:hover{
+     transform: scale(1.5);
+ }
+ .fa-linkedin{
+  transition: all 0.3s linear;
+
+ }
+ .fa-linkedin:hover{
+     transform: scale(1.5);
+ }
+ .fa-github{
+  transition: all 0.3s linear;
+
+ }
+ .fa-github:hover{
+     transform: scale(1.5);
+ }
+ .fa-envelope{
+  transition: all 0.3s linear;
+
+ }
+ .fa-envelope:hover{
+     transform: scale(1.5);
+ }
+ .fa-telegram{
+  transition: all 0.3s linear;
+
+ }
+ .fa-telegram:hover{
+     transform: scale(1.5);
+ }
+ .fa-whatsapp{
+  transition: all 0.3s linear;
+
+ }
+ .fa-whatsapp:hover{
+     transform: scale(1.5);
+ }
+ .fa-home{
+  transition: all 0.3s linear;
+
+ }
+ .fa-home:hover{
+     transform: scale(1.5);
+ } */
+
+.social-icons a:hover i {
+    color: #FFFFFF;
+    /* transform:scale(0.5s); */
 }
 
 @media screen and (max-width: 850px) {
-  footer,.lefticon{   
-    flex-direction: column;
-  }
-
+    footer,
+    .social-icons {
+        flex-direction: column;
+    }
 }
+
 
 /* *********************************** FOOTER END ******************************  */
 
+.social {
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0rem;
+    padding: 0rem;
+    line-height: 0rem;
+    background-color: #FFFFFF;
+    border: 1px solid #CBCBCB;
+    box-shadow: 0.2rem 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+
+.social a:hover {
+    background-color: #ee7d96;
+    transition: all ease 0.5s;
+}
+
+.social i {
+    font-size: 2rem;
+    color: #2B2B2B;
+}
+
+.social a:hover i {
+    color: black;
+    transition: all ease 0.2s;
+}
+
+.social .fa-facebook-f {
+    transition: all 0.3s linear;
+}
+
+.social .fa-facebook-f:hover {
+    transform: scale(1.5);
+}
+
+.social .fa-twitter {
+    transition: all 0.3s linear;
+}
+
+.social .fa-twitter:hover {
+    transform: scale(1.5);
+}
+
+.social .fa-instagram {
+    transition: all 0.3s linear;
+}
+
+.social .fa-instagram:hover {
+    transform: scale(1.5);
+}
+
+.social .fa-linkedin {
+    transition: all 0.3s linear;
+}
+
+.social .fa-linkedin:hover {
+    transform: scale(1.5);
+}
+
+.social .fa-github {
+    transition: all 0.3s linear;
+}
+
+.social .fa-github:hover {
+    transform: scale(1.5);
+}
+
+.social .fa-envelope {
+    transition: all 0.3s linear;
+}
+
+.social .fa-envelope:hover {
+    transform: scale(1.5);
+}
+
+.social .fa-telegram {
+    transition: all 0.3s linear;
+}
+
+.social .fa-telegram:hover {
+    transform: scale(1.5);
+}
+
+.social .fa-whatsapp {
+    transition: all 0.3s linear;
+}
+
+.social .fa-whatsapp:hover {
+    transform: scale(1.5);
+}
+
+.home-left .fa-home {
+    transition: all 0.3s linear;
+}
+
+.home-left .fa-home:hover {
+    transform: scale(1.5);
+}
+
+
+/* *********************************** home left links ****************************** */
+
+.home-left {
+    position: fixed;
+    top: 50%;
+    left: 0rem;
+    transform: translateY(-50%);
+}
+
+.home-left a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0rem;
+    line-height: 0rem;
+    background-color: #FFFFFF;
+    border: 1px solid #CBCBCB;
+    box-shadow: 0.2rem 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+
+.home-left a:hover {
+    background-color: #fa7474;
+    ;
+    transition: all ease 0.5s;
+}
+
+.home-left i {
+    font-size: 2rem;
+    color: #2B2B2B;
+}
