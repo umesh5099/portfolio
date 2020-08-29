@@ -24,7 +24,7 @@ body {
 
 header {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(238, 238, 235);
 }
 
 .image {
@@ -115,7 +115,7 @@ header {
 
 main {
     width: 90%;
-    margin: 0rem auto;
+    margin: 4rem auto;
 }
 
 .blog {
@@ -196,13 +196,12 @@ footer {
 .leftbox {
     flex: 32%;
     border-right: 0.05rem solid lightgrey;
-    /* background: black ;
-  opacity: 0.8; */
+    background: #F1F1F1;
 }
 
 .rightbox {
     flex: 58%;
-    /* background: #F3F5F5 ; */
+    background: #F3F5F5;
 }
 
 .social-icons a {
@@ -211,7 +210,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color:#F3F5F5; */
+    background-color: #F3F5F5;
     margin: 4rem auto;
     /* border-radius:50%; */
     font-size: 4.5rem;
