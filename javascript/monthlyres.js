@@ -32,12 +32,12 @@ const quotes = [{
         quote: `“Failure Will Never Overtake Me If My Determination To Succeed Is Strong Enough.”`,
         author: `- Og Mandino`
     }, ]
-    // New Quote Button
+    // creating new Quote Button
 const quoteBtn = document.getElementById('quote-btn');
-// Get Quote and author Section
+// selecting  Quote and author using queryselector
 const quote = document.querySelector('.quote');
 const author = document.querySelector('.author');
-// Event Handler
+// adding an Event Handler
 quoteBtn.addEventListener('click', () => {
     let random = Math.floor(Math.random() * quotes.length);
     quote.innerHTML = quotes[random].quote;
