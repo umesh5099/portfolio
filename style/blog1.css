@@ -220,7 +220,7 @@ span {
 .mainright {
     background-color: rgb(130, 84, 238);
     flex: 30%;
-    height: 100rem;
+    height: 97rem;
     /* border-left: lightgrey; */
 }
 
@@ -324,7 +324,8 @@ img .linkedin {
         width: 100%;
     }
     .mainright {
-        height: 180rem;
+        height: 150rem;
+        padding-bottom: 8rem;
         /* border-left: lightgrey; */
     }
 }
