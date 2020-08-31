@@ -255,6 +255,40 @@ main {
 .skills li {
     font-size: 6rem;
     margin-left: 2.5rem;
+    /* position: relative;
+    animation: move 1s 2; */
+}
+
+.skills li .fab {
+    font-size: 6rem;
+    margin-left: 2.5rem;
+    position: relative;
+    animation: move 1s 1;
+}
+
+@keyframes move {
+    from {
+        left: 0rem;
+    }
+    to {
+        left: 20rem;
+    }
+}
+
+.skills li .fab:hover {
+    font-size: 6rem;
+    margin-left: 2.5rem;
+    position: relative;
+    animation: movehover 1s 1;
+}
+
+@keyframes movehover {
+    from {
+        left: 0rem;
+    }
+    to {
+        left: 20rem;
+    }
 }
 
 .fa-html5 {
@@ -288,31 +322,51 @@ main {
     text-align: center;
     color: white;
     border-radius: .5rem;
+    animation: loading 1s linear;
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+}
+
+.skillbar:hover {
+    text-align: center;
+    color: white;
+    border-radius: .5rem;
+    animation: loadinghover 3s linear;
+}
+
+@keyframes loadinghover {
+    0% {
+        width: 0%;
+    }
 }
 
 .js {
     width: 65%;
-    background-color: #2196F3;
+    background: linear-gradient(#a0c0da, #055494);
 }
 
 .html {
     width: 90%;
-    background-color: #2196F3;
+    background: linear-gradient(#a0c0da, #055494);
 }
 
 .css {
     width: 80%;
-    background-color: #2196F3;
+    background: linear-gradient(#a0c0da, #055494);
 }
 
 .bootstrap {
     width: 60%;
-    background-color: #2196F3;
+    background: linear-gradient(#a0c0da, #055494);
 }
 
 .python {
     width: 60%;
-    background-color: #2196F3;
+    background: linear-gradient(#a0c0da, #055494);
 }
 
 .skillper {
