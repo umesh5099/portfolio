@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -8,100 +10,68 @@ html {
 }
 
 body {
-    margin: 0rem;
+    background: gainsboro;
 }
 
 
-/* .bgimage {
-    background-image: url(https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
-    background-size: 100% 100%;
-    width: 100%;
-    height: 100%;
-} */
-
-
-/* ***************************************** HEADER *********************************** */
+/* ************************************ HEADER *********************************** */
 
 header {
     display: flex;
-    background-color: rgb(238, 238, 235);
+    /* background: orange; */
+    max-width: 100%;
+    height: 4.5rem;
+    margin: 2rem 0rem;
 }
 
-.image {
-    flex: 20%;
-    text-align: end;
-    padding: 5rem .5rem 3rem 0.5rem;
-}
-
-.mypic {
+header .myimage img {
+    width: 4.5rem;
+    height: 4.5rem;
     border-radius: 50%;
-    box-shadow: .6rem .6rem 1rem -.1rem rgba(0, 0, 0, 0.15), -.6rem -.6rem 1rem -.1rem rgba(255, 255, 255, 0.7);
+    margin: 0rem 0rem 0rem 6rem;
 }
 
-.name {
-    flex: 40%;
-}
-
-.nameheading {
-    font-size: 5rem;
-    letter-spacing: .2rem;
-    line-height: 12rem;
-    font-family: 'Audiowide';
-    background-color: rgba(238, 238, 235);
-    box-shadow: .6rem .6rem 1rem -.1rem rgba(0, 0, 0, 0.15), -.6rem -.6rem 1rem -.1rem rgba(255, 255, 255, 0.7), inset .6rem .6rem 1rem -.1rem rgba(255, 255, 255, 0.15);
-}
-
-.headerlinks {
-    flex: 40%;
+header .header-nav {
+    width: 114rem;
+    /* background: chocolate; */
     text-align: end;
 }
 
-.headerlinks a {
-    /* background-color: black; */
-    font-size: 2.5rem;
-    margin: 0rem 2rem 0rem 4rem;
-    line-height: 23rem;
-    text-decoration: none;
+header .header-nav nav {
+    line-height: 4.5rem;
+}
+
+header .header-nav nav a {
+    font-size: 2rem;
+    margin: 0rem 3rem;
+    letter-spacing: 0.2rem;
+    font-family: sans-serif;
     color: black;
-    font-family: 'Heebo', sans-serif;
-    box-shadow: .6rem .6rem 1rem -.1rem rgba(255, 255, 255, 0.7), -.6rem -.6rem 1rem -.1rem rgba(0, 0, 0, 0.15);
-    border: 0.1rem solid rgba(0, 0, 0, 0);
 }
 
-.headerlinks a:hover {
+header .header-nav nav a:hover {
     color: red;
-    font-size: 2.3rem;
-    box-shadow: inset .4rem .4rem .6rem -.1rem rgba(0, 0, 0, 0.2), inset -.4rem -.4rem 6rem -.1rem rgba(255, 255, 255, 0.7), -0.05rem -0.05rem 0rem rgba(255, 255, 255, 1), 0.05rem 0.05rem 0rem rgba(0, 0, 0, 0.15), 0rem 1.2rem 1rem -1rem rgba(0, 0, 0, 0.05);
-    border: .1rem solid rgba(0, 0, 0, 0.01);
 }
 
 
-/* *********************************** RESPONSIVE HEADER ********************************* */
+/* /////////////////////// responsive-header ////////////////////////////////////// */
 
 @media screen and (max-width: 850px) {
-    header,
-    .headerlinks {
-        flex-direction: column;
+    header {
+        margin: 0.2rem 0rem 2rem 0rem;
     }
-    .image {
-        text-align: center;
-        padding: 3rem .2rem .5rem .2rem;
+    header .myimage img {
+        margin: 1rem 0rem 0rem 2rem;
     }
-    .name {
-        flex: 40%;
-        text-align: center;
-        padding: 1rem .2rem;
+    header .header-nav nav {
+        line-height: 6rem;
     }
-    .nameheading {
-        font-size: 5rem;
-        line-height: 8rem;
+    header .header-nav nav a {
+        margin: 0rem 2rem;
     }
-    .headerlinks {
-        text-align: center;
-    }
-    .headerlinks a {
-        line-height: 9rem;
-        margin: 0rem 5rem 0rem 5rem;
+    /* visibility hidden */
+    header .header-nav {
+        visibility: hidden;
     }
 }
 
@@ -111,158 +81,261 @@ header {
 
 /* ************************************ MAIN  *********************************** */
 
-main {
-    /* background-image: url(file:///home/umesh/Desktop/bootstrap/resource/background.jpeg);
-    background-size: 100% 100%;
-    width: 100%;
-    height:100%; */
-    display: flex;
-    text-align: center;
-    padding-left: 5.5rem;
-    padding-right: 5.5rem;
+.main {
+    /* background: chartreuse; */
+    margin: 4rem 4.8rem 0rem 4.8rem;
 }
 
-main p {
-    background: rgba(255, 255, 255, 0.5);
-    font-family: 'Average Sans';
-    font-size: 3.5rem;
-    letter-spacing: .2rem;
-    color: rgba(0, 0, 0, 0.87);
-    padding: 1rem 0;
+.main .intro,
+.project {
+    /* background: chocolate; */
+    width: 100%;
+    justify-content: left;
+    padding-left: 1rem;
+    margin: 0rem;
+    transform-origin: right center;
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-name: slideX;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes slideX {
+    FROM {
+        transform: scaleX(0);
+        opacity: 1;
+    }
+    TO {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+.main .intro .intro_heading {
+    font-size: 4rem;
+    letter-spacing: .2rem;
+}
+
+.intro_flex {
+    display: flex;
+}
+
+
+/* intro-para */
+
+.main .intro_content {
+    /* background: cornflowerblue; */
+    flex: 40%;
+    /* padding of intro part and animation */
+    padding: 0rem 1rem 0rem 1rem;
+    transform-origin: right center;
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-name: slideY;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    margin-right: 5rem;
+}
+
+@keyframes slideY {
+    FROM {
+        transform: scaleY(0);
+        opacity: 1;
+    }
+    TO {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+.main .intro_content .intro_para {
+    padding: 1rem 0.5rem;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+    line-height: 2.5rem;
+    font-family: sans-serif;
+}
+
+.main .project .intro_heading {
+    font-size: 4rem;
+    letter-spacing: .2rem;
+}
+
+
+/* ///////////// my-photo-about_section //////////// */
+
+.main .intro_flex .myimage {
+    flex: 40%;
+}
+
+.main .intro_flex .myimage img {
+    max-width: 80%;
+    padding: 0rem 2rem 0rem 0rem;
+    margin-left: 10rem;
+    border-radius: 10rem;
+}
+
+.main .intro_flex .myimage img:hover {
+    animation: rotateimg 1s linear;
+}
+
+@keyframes rotateimg {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* ///////////// my-photo-about_section end//////////// */
+
+
+/*  //////////////////            skils         ///////////////////// */
+
+ol {
+    font-size: 2rem;
+    padding-left: 3rem;
+}
+
+
+/* ////////////////////////////////// responsive-main //////////////////////////////////// */
+
+@media screen and (max-width: 850px) {
+    .main {
+        margin: 1rem 0rem;
+    }
+    .main .intro_content {
+        padding-left: .7rem;
+    }
+    .main .intro .intro_heading {
+        padding-top: 2.5rem;
+        font-size: 3rem;
+    }
+    .main .project_content ul {
+        padding-left: .5rem;
+    }
+    .intro_flex {
+        flex-direction: column;
+    }
+    .main .intro_content {
+        max-width: 100%;
+        margin-right: 0rem;
+    }
+    .main .intro_flex .myimage img {
+        max-width: 100%;
+        margin-left: 0rem;
+        padding: 1rem;
+    }
+}
+
+
+/* //////////////////////////////// responsive-main-end ////////////////////////////////// */
 
 
 /* ************************************ MAIN END *********************************** */
+
+
+/* ##################### side bar appears from right  ############################ */
+
+#sideNav {
+    width: 25rem;
+    height: 100vh;
+    position: fixed;
+    right: -25rem;
+    top: 0;
+    z-index: 2;
+    background: #2B2B2B;
+    transition: 0.5s;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 5rem 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+#menuBtn {
+    width: 5rem;
+    position: fixed;
+    right: 6.5rem;
+    top: 3.5rem;
+    z-index: 2;
+    cursor: pointer;
+    color: #fff;
+}
+
+#menuBtn {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 850px) {
+    #menuBtn {
+        visibility: visible;
+    }
+    #menuBtn {
+        width: 5rem;
+        right: 2rem;
+        top: 1.5rem;
+        color: black;
+    }
+}
+
+
+/* ##################### side bar appears from right ends  ############################ */
 
 
 /* ************************************ FOOTER *********************************** */
 
 footer {
     display: flex;
-}
-
-.leftbox {
-    flex: 32%;
-    border-right: 0.05rem solid lightgrey;
-    background: #f1f1f1;
-}
-
-.rightbox {
-    flex: 58%;
-    background: #F3F5F5;
-}
-
-.social-icons a {
-    width: 6rem;
-    height: 6rem;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    /* background-color:#F3F5F5; */
-    margin: 4rem auto;
-    /* border-radius:50%; */
-    font-size: 4.5rem;
-    box-shadow: .6rem .6rem 1rem -.1rem rgba(6, 6, 6, 0.7), -.6rem -.6rem 1rem -.1rem rgba(0, 0, 0, 0.15), -.6rem -.6rem 1rem -.1rem rgba(255, 255, 255, 0.15);
-    ;
+    background: gainsboro;
+    padding: 2rem 0rem 2rem 0rem;
 }
 
-.social-icons {
-    display: flex;
-    text-align: center;
+footer .footer_items a {
+    margin: 0 2rem;
+    color: rgb(102, 100, 100);
 }
 
-.social-icons a:hover {
-    box-shadow: inset 0.2rem 0.2rem 1.2rem rgba(0, 0, 0, 0.2), inset -0.2rem -0.2rem 1.2rem rgba(255, 255, 255, 0.4);
-    ;
-    font-size: 3rem;
+footer .footer_items a .fa-facebook-official:hover,
+.fa-instagram:hover,
+.fa-github-square:hover,
+.fa-linkedin-square:hover,
+.fa-twitter-square:hover {
+    color: rgb(6, 6, 82);
+    animation: rotateicons 2s linear;
 }
 
-
-/* .fa-facebook-f{
-    transition: all 0.3s linear;
-
-   }
-   .fa-facebook-f:hover{
-       transform: scale(1.8);
-   } */
-
-
-/* .fa-facebook-f:hover{
-       color: sienna;
-   } */
-
-
-/* .fa-twitter{
-    transition: all 0.3s linear;
-
-   }
-   .fa-twitter:hover{
-       transform: scale(1.5);
-   }
-   .fa-instagram{
-    transition: all 0.3s linear;
-
-   }
-   .fa-instagram:hover{
-       transform: scale(1.5);
-   }
-   .fa-linkedin{
-    transition: all 0.3s linear;
-
-   }
-   .fa-linkedin:hover{
-       transform: scale(1.5);
-   }
-   .fa-github{
-    transition: all 0.3s linear;
-
-   }
-   .fa-github:hover{
-       transform: scale(1.5);
-   }
-   .fa-envelope{
-    transition: all 0.3s linear;
-
-   }
-   .fa-envelope:hover{
-       transform: scale(1.5);
-   }
-   .fa-telegram{
-    transition: all 0.3s linear;
-
-   }
-   .fa-telegram:hover{
-       transform: scale(1.5);
-   }
-   .fa-whatsapp{
-    transition: all 0.3s linear;
-
-   }
-   .fa-whatsapp:hover{
-       transform: scale(1.5);
-   }
-   .fa-home{
-    transition: all 0.3s linear;
-
-   }
-   .fa-home:hover{
-       transform: scale(1.5);
-   } */
-
-.social-icons a:hover i {
-    color: #FFFFFF;
-    /* transform:scale(0.5s); */
+@keyframes rotateicons {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media screen and (max-width: 850px) {
-    footer,
-    .social-icons {
-        flex-direction: column;
+    footer .footer_items a {
+        margin: 0 1rem;
     }
 }
 
 
 /* *********************************** FOOTER END ******************************  */
+
+
+/* ////////////////////////////// sticky-bar side starts //////////////////////// */
 
 .social {
     position: fixed;
@@ -404,4 +477,17 @@ footer {
 .home-left i {
     font-size: 2rem;
     color: #2B2B2B;
+}
+
+
+/* ////////////////////////////// responsive-sticky bar side //////////////////// */
+
+@media screen and (max-width: 850px) {
+    .social,
+    .home-left {
+        display: none;
+    }
+}
+
+
 }

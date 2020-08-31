@@ -146,7 +146,7 @@ header {
 }
 
 .mainleft1 {
-    /* background-color: rgb(90, 240, 110); */
+    /* background: gainsboro; */
     height: auto;
     flex: 55%;
     padding-left: 2.5rem;
@@ -154,6 +154,7 @@ header {
 }
 
 .heading1 {
+    margin-top: 0rem;
     font-size: 4rem;
     letter-spacing: .2rem;
     font-family: 'Cantarell';
@@ -222,36 +223,40 @@ span {
 }
 
 .mainright {
-    /* background-color: rgb(130, 84, 238); */
+    /* background: rgb(236, 235, 235); */
     flex: 30%;
     height: 97rem;
     /* border-left: lightgrey; */
 }
 
 .image-right {
-    width: 65%;
+    width: 100%;
+    height: 40%;
     padding-left: 6rem;
-    padding-top: 2rem;
+    padding-top: 3.5rem;
     padding-right: 6rem;
+    border-radius: 1rem;
 }
 
 .para-right1 {
     font-family: 'Cormorant Upright';
     font: lightgrey;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     font-weight: bold;
     font-size: 2.8rem;
+    letter-spacing: 0.15rem;
 }
 
 .para-right2 {
-    font-family: 'Content';
+    font-family: sans-serif;
     font: lightgrey;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     margin-bottom: 0;
     font-weight: bold;
     font-size: 4.0rem;
+    letter-spacing: 0.2rem;
     text-decoration: underline;
 }
 
@@ -292,6 +297,7 @@ img .linkedin {
 .quote {
     font-family: 'content';
     font-size: 2.2rem;
+    letter-spacing: 0.1rem;
     font: lightgrey;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -305,6 +311,7 @@ img .linkedin {
     border: none;
     outline: none;
     font-size: 1.6rem;
+    letter-spacing: 0.1rem;
     font-family: 'Kalam', cursive;
     padding: 1rem 1.5rem;
     background: #455261;
@@ -339,6 +346,14 @@ img .linkedin {
     }
     .mainleft1 {
         width: 100%;
+    }
+    .image-right {
+        width: 100%;
+        height: 25%;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        border-radius: 1rem;
     }
     .mainright {
         height: 150rem;
