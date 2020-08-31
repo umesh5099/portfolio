@@ -146,7 +146,7 @@ header {
 }
 
 .mainleft1 {
-    background-color: rgb(90, 240, 110);
+    /* background-color: rgb(90, 240, 110); */
     height: auto;
     flex: 55%;
     padding-left: 2.5rem;
@@ -154,17 +154,21 @@ header {
 }
 
 .heading1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
+    letter-spacing: .2rem;
     font-family: 'Cantarell';
 }
 
 .image1 {
     width: 95%;
+    height: 60rem;
 }
 
 .para1 {
-    font-family: 'Content';
-    font-size: 2.5rem;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
     padding-right: 3.0rem;
 }
 
@@ -218,7 +222,7 @@ span {
 }
 
 .mainright {
-    background-color: rgb(130, 84, 238);
+    /* background-color: rgb(130, 84, 238); */
     flex: 30%;
     height: 97rem;
     /* border-left: lightgrey; */
@@ -298,8 +302,18 @@ img .linkedin {
 }
 
 #quote-btn {
-    background: gainsboro;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    font-family: 'Kalam', cursive;
+    padding: 1rem 1.5rem;
+    background: #455261;
+    color: #fff;
     cursor: pointer;
+}
+
+#quote-btn:hover {
+    background: green;
 }
 
 @media screen and (max-width: 850px) {
