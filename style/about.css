@@ -94,6 +94,23 @@ header .header-nav nav a:hover {
 .main_left {
     /* background: orange; */
     flex: 34%;
+    transform-origin: left center;
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-name: slideleft;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideleft {
+    FROM {
+        transform: scaleX(0);
+        opacity: 1;
+    }
+    TO {
+        transform: scaleX(1);
+        opacity: 1;
+    }
 }
 
 .main .main_left .intro,
@@ -106,6 +123,8 @@ header .header-nav nav a:hover {
 
 .main .main_left .intro p {
     font-size: 2rem;
+    letter-spacing: 0.2rem;
+    line-height: 3rem;
 }
 
 
@@ -144,6 +163,7 @@ header .header-nav nav a:hover {
 .main_left .contact_info ul li {
     font-size: 2rem;
     padding-bottom: 1rem;
+    letter-spacing: .2rem;
 }
 
 .main_left .contact_info .contact_heading {
@@ -183,7 +203,7 @@ header .header-nav nav a:hover {
     font-size: 2rem;
     padding: .5rem 0rem 1rem 2.5rem;
     font-family: 'Libre Caslon Display', serif;
-    letter-spacing: .1rem;
+    letter-spacing: .2rem;
 }
 
 
@@ -193,10 +213,27 @@ header .header-nav nav a:hover {
     /* background: gold; */
     border-left: .05rem solid grey;
     flex: 66%;
+    transform-origin: right center;
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-name: slideright;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideright {
+    FROM {
+        transform: scaleX(0);
+        opacity: 1;
+    }
+    TO {
+        transform: scaleX(1);
+        opacity: 1;
+    }
 }
 
 .main_right .career_heading {
-    padding: 1rem 1rem 0rem 2rem;
+    padding: 1rem 1rem 1rem 2rem;
     letter-spacing: .4rem;
     word-spacing: 1rem;
     font-size: 4rem;
@@ -210,7 +247,7 @@ header .header-nav nav a:hover {
     /* color: brown; */
     padding: 1rem 1rem 2rem 2rem;
     font-family: 'Libre Caslon Display', serif;
-    letter-spacing: .2rem;
+    letter-spacing: .25rem;
     line-height: 3rem;
 }
 
@@ -299,14 +336,14 @@ header .header-nav nav a:hover {
 .main .projects ul li {
     font-size: 3rem;
     padding: 1rem 0rem;
-    letter-spacing: .2rem;
+    letter-spacing: .25rem;
 }
 
 .main .projects ul .prjoect-content {
     font-size: 2rem;
     padding: 0rem 1rem 1rem 4rem;
     font-family: 'Libre Caslon Display', serif;
-    letter-spacing: .2rem;
+    letter-spacing: .25rem;
     line-height: 3rem;
 }
 
