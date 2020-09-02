@@ -96,7 +96,20 @@ header .header-nav nav a:hover {
     flex: 34%;
 }
 
-.main .main_left .myimage {
+.main .main_left .intro,
+.its-me {
+    /* background: #ee7d96; */
+    margin: 2rem 0rem 2rem 2rem;
+    display: flex;
+    justify-content: justify;
+}
+
+.main .main_left .intro p {
+    font-size: 2rem;
+}
+
+
+/* .main .main_left .myimage {
     margin: 1rem 0rem;
     display: flex;
     justify-content: center;
@@ -109,7 +122,6 @@ header .header-nav nav a:hover {
 }
 
 .main_left .myname {
-    /* background: cornflowerblue; */
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -118,7 +130,7 @@ header .header-nav nav a:hover {
 
 .main_left .myname .name {
     font-size: 5.5rem;
-}
+} */
 
 .main_left .contact_info {
     /* background: cyan; */
