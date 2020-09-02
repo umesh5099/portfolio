@@ -126,7 +126,7 @@ header .header-nav nav a:hover {
 
 .main .intro_content {
     /* background: cornflowerblue; */
-    flex: 40%;
+    flex: 100%;
     /* padding of intro part and animation */
     padding: 0rem 1rem 0rem 1rem;
     transform-origin: right center;
@@ -166,7 +166,8 @@ header .header-nav nav a:hover {
 
 /* ///////////// my-photo-about_section //////////// */
 
-.main .intro_flex .myimage {
+
+/* .main .intro_flex .myimage {
     flex: 40%;
 }
 
@@ -188,7 +189,7 @@ header .header-nav nav a:hover {
     to {
         transform: rotate(0deg);
     }
-}
+} */
 
 
 /* ///////////// my-photo-about_section end//////////// */
@@ -196,10 +197,89 @@ header .header-nav nav a:hover {
 
 /*  //////////////////            skils         ///////////////////// */
 
-ol {
+ul {
     font-size: 2rem;
-    padding-left: 3rem;
+    padding-left: 1rem;
+    list-style: none;
 }
+
+ul li {
+    padding-left: 0;
+}
+
+ul li i .fa-caret-right {
+    animation: rotateskill 1s linear;
+}
+
+@keyframes rotateskill {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.download_btn {
+    margin: 3rem 0rem 5rem 0rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.btn {
+    color: black;
+    padding: .5rem;
+    border: .2rem solid black;
+    border-radius: 1rem;
+    font-family: 'Alata', sans-serif;
+    outline: none;
+    background: rgb(235, 233, 233);
+    font-size: 1.4rem;
+    cursor: pointer;
+    transform-origin: left center;
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-name: slidebtn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slidebtn {
+    FROM {
+        transform: scaleX(0);
+        opacity: 1;
+    }
+    TO {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+.btn:hover {
+    background: green;
+}
+
+
+/* .btn:hover {
+    transform-origin: left center;
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-name: slidebtnhover;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes slidebtnhover {
+    FROM {
+        transform: scaleY(0);
+        opacity: 1;
+    }
+    TO {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+} */
 
 
 /* ////////////////////////////////// responsive-main //////////////////////////////////// */
@@ -292,6 +372,10 @@ nav ul li a {
     }
 }
 
+hr {
+    color: lightgrey;
+}
+
 
 /* ##################### side bar appears from right ends  ############################ */
 
@@ -302,7 +386,7 @@ footer {
     display: flex;
     justify-content: center;
     background: gainsboro;
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 4rem 0rem 4rem 0rem;
 }
 
 footer .footer_items a {
