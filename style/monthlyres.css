@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -8,102 +10,68 @@ html {
 }
 
 body {
-    margin: 0rem;
+    background: rgb(183, 183, 183);
 }
 
 
-/* .bgimage {
-    background-image: url(https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
-    background-size: 100% 100%;
-    width: 100%;
-    height: 100%;
-} */
-
-
-/* ***************************************** HEADER *********************************** */
+/* ************************************ HEADER *********************************** */
 
 header {
     display: flex;
-    background-color: rgb(238, 238, 235);
+    /* background: orange; */
+    max-width: 100%;
+    height: 4.5rem;
+    margin: 2rem 0rem;
 }
 
-.image {
-    flex: 20%;
-    text-align: end;
-    padding: 5rem .5rem 3rem 0.5rem;
-}
-
-.mypic {
+header .myimage img {
+    width: 4.5rem;
+    height: 4.5rem;
     border-radius: 50%;
-    /* box-shadow: .6rem .6rem 1rem -.1rem rgba(0,0,0,0.15),
-  -.6rem -.6rem 1rem -.1rem rgba(255,255,255,0.7); */
+    margin: 0rem 0rem 0rem 6rem;
 }
 
-.name {
-    flex: 40%;
-}
-
-.nameheading {
-    font-size: 5rem;
-    letter-spacing: .2rem;
-    line-height: 12rem;
-    font-family: 'Audiowide';
-    background-color: rgba(238, 238, 235, 0.5);
-    box-shadow: .6rem .6rem 1rem -.1rem rgba(0, 0, 0, 0.15), -.6rem -.6rem 1rem -.1rem rgba(255, 255, 255, 0.7), inset .6rem .6rem 1rem -.1rem rgba(255, 255, 255, 0.15);
-}
-
-.headerlinks {
-    flex: 40%;
+header .header-nav {
+    width: 114rem;
+    /* background: chocolate; */
     text-align: end;
 }
 
-.headerlinks a {
-    /* background-color: black; */
-    font-size: 2.5rem;
-    margin: 0rem 2rem 0rem 4rem;
-    line-height: 23rem;
-    text-decoration: none;
+header .header-nav nav {
+    line-height: 4.5rem;
+}
+
+header .header-nav nav a {
+    font-size: 2rem;
+    margin: 0rem 3rem;
+    letter-spacing: 0.2rem;
+    font-family: sans-serif;
     color: black;
-    font-family: 'Heebo', sans-serif;
-    ;
-    box-shadow: .6rem .6rem 1rem -.1rem rgba(255, 255, 255, 0.7), -.6rem -.6rem 1rem -.1rem rgba(0, 0, 0, 0.15);
-    border: 0.1rem solid rgba(0, 0, 0, 0);
 }
 
-.headerlinks a:hover {
+header .header-nav nav a:hover {
     color: red;
-    font-size: 2.3rem;
-    box-shadow: inset .4rem .4rem .6rem -.1rem rgba(0, 0, 0, 0.2), inset -.4rem -.4rem 6rem -.1rem rgba(255, 255, 255, 0.7), -0.05rem -0.05rem 0rem rgba(255, 255, 255, 1), 0.05rem 0.05rem 0rem rgba(0, 0, 0, 0.15), 0rem 1.2rem 1rem -1rem rgba(0, 0, 0, 0.05);
-    border: .1rem solid rgba(0, 0, 0, 0.01);
 }
 
 
-/* *********************************** RESPONSIVE HEADER ********************************* */
+/* /////////////////////// responsive-header ////////////////////////////////////// */
 
 @media screen and (max-width: 850px) {
-    header,
-    .headerlinks {
-        flex-direction: column;
+    header {
+        margin: 0.2rem 0rem 2rem 0rem;
     }
-    .image {
-        text-align: center;
-        padding: 3rem .2rem .5rem .2rem;
+    header .myimage img {
+        margin: 1rem 0rem 0rem 2rem;
     }
-    .name {
-        flex: 40%;
-        text-align: center;
-        padding: 1rem .2rem;
+    header .header-nav nav {
+        line-height: 6rem;
     }
-    .nameheading {
-        font-size: 5rem;
-        line-height: 8rem;
+    header .header-nav nav a {
+        margin: 0rem 2rem;
     }
-    .headerlinks {
-        text-align: center;
-    }
-    .headerlinks a {
-        line-height: 9rem;
-        margin: 0rem 5rem 0rem 5rem;
+    /* visibility hidden */
+    header .header-nav {
+        visibility: hidden;
     }
 }
 
@@ -137,7 +105,7 @@ header {
 
 .main {
     display: flex;
-    background-color: none;
+    background-color: lightgrey;
     width: 80%;
     height: auto;
     margin: 0rem auto;
@@ -179,22 +147,22 @@ hr {
 
 
 /* .para2{
-    font-family: 'Content';
-    font-size: 2.5rem;
-    padding-right: 3.0rem;
+   font-family: 'Content';
+   font-size: 2.5rem;
+   padding-right: 3.0rem;
 } */
 
 
 /* .heading2{
-    font-size: 3.5rem;
-    font-family: 'Cantarell';
+   font-size: 3.5rem;
+   font-family: 'Cantarell';
 } */
 
 
 /* .para3{
-    font-family: 'Content';
-    font-size: 2.5rem;
-    padding-right: 3.0rem;
+   font-family: 'Content';
+   font-size: 2.5rem;
+   padding-right: 3.0rem;
 } */
 
 .para4 {
@@ -204,8 +172,8 @@ hr {
 
 
 /* .heading3{
-    font-size: 3.5rem;
-    font-family: 'Cantarell';
+   font-size: 3.5rem;
+   font-family: 'Cantarell';
 } */
 
 .para5 {
@@ -287,7 +255,7 @@ img .linkedin {
 }
 
 .vertical-rule {
-    border-left: .3rem solid lightgrey;
+    border-left: .3rem solid black;
     height: 13.0rem;
     margin-left: 2.5rem;
     margin-bottom: 1rem;
@@ -325,8 +293,8 @@ img .linkedin {
 
 @media screen and (max-width: 850px) {
     /* html {
-        font-size: 40%;
-    } */
+       font-size: 40%;
+   } */
     .main {
         flex-direction: column;
         max-width: 100%;
@@ -363,6 +331,9 @@ img .linkedin {
 }
 
 
+/* //////////////////////////////// responsive-main-end ////////////////////////////////// */
+
+
 /* ************************************ MAIN END *********************************** */
 
 
@@ -370,131 +341,99 @@ img .linkedin {
 
 footer {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-.leftbox {
-    flex: 32%;
-    border-right: 0.05rem solid lightgrey;
-    background: #F1F1F1;
-}
-
-.rightbox {
-    flex: 58%;
-    background: #F3F5F5;
-}
-
-.social-icons a {
-    width: 6rem;
-    height: 6rem;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #F3F5F5;
-    margin: 4rem auto;
-    /* border-radius:50%; */
-    font-size: 4.5rem;
-    box-shadow: .6rem .6rem 1rem -.1rem rgba(6, 6, 6, 0.7), -.6rem -.6rem 1rem -.1rem rgba(0, 0, 0, 0.15), -.6rem -.6rem 1rem -.1rem rgba(255, 255, 255, 0.15);
-    ;
+    /* background: gainsboro; */
+    padding: 4rem 0rem 4rem 0rem;
 }
 
-.social-icons {
-    display: flex;
-    text-align: center;
+footer .footer_items a {
+    margin: 0 2rem;
+    color: rgb(102, 100, 100);
 }
 
-.social-icons a:hover {
-    box-shadow: inset 0.2rem 0.2rem 1.2rem rgba(0, 0, 0, 0.2), inset -0.2rem -0.2rem 1.2rem rgba(255, 255, 255, 0.4);
-    ;
-    font-size: 3rem;
+footer .footer_items a .fa-facebook-official:hover,
+.fa-instagram:hover,
+.fa-github-square:hover,
+.fa-linkedin-square:hover,
+.fa-twitter-square:hover {
+    color: rgb(6, 6, 82);
+    animation: rotateicons 2s linear;
 }
 
-
-/* .fa-facebook-f{
-  transition: all 0.3s linear;
-
- }
- .fa-facebook-f:hover{
-     transform: scale(1.8);
- } */
-
-
-/* .fa-facebook-f:hover{
-     color: sienna;
- } */
-
-
-/* .fa-twitter{
-  transition: all 0.3s linear;
-
- }
- .fa-twitter:hover{
-     transform: scale(1.5);
- }
- .fa-instagram{
-  transition: all 0.3s linear;
-
- }
- .fa-instagram:hover{
-     transform: scale(1.5);
- }
- .fa-linkedin{
-  transition: all 0.3s linear;
-
- }
- .fa-linkedin:hover{
-     transform: scale(1.5);
- }
- .fa-github{
-  transition: all 0.3s linear;
-
- }
- .fa-github:hover{
-     transform: scale(1.5);
- }
- .fa-envelope{
-  transition: all 0.3s linear;
-
- }
- .fa-envelope:hover{
-     transform: scale(1.5);
- }
- .fa-telegram{
-  transition: all 0.3s linear;
-
- }
- .fa-telegram:hover{
-     transform: scale(1.5);
- }
- .fa-whatsapp{
-  transition: all 0.3s linear;
-
- }
- .fa-whatsapp:hover{
-     transform: scale(1.5);
- }
- .fa-home{
-  transition: all 0.3s linear;
-
- }
- .fa-home:hover{
-     transform: scale(1.5);
- } */
-
-.social-icons a:hover i {
-    color: #FFFFFF;
-    /* transform:scale(0.5s); */
+@keyframes rotateicons {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media screen and (max-width: 850px) {
-    footer,
-    .social-icons {
-        flex-direction: column;
+    footer .footer_items a {
+        margin: 0 1rem;
     }
 }
 
 
 /* *********************************** FOOTER END ******************************  */
+
+
+/* ##################### side bar appears/pops from right  ############################ */
+
+#sideNav {
+    width: 11rem;
+    height: 100vh;
+    position: fixed;
+    right: -25rem;
+    top: 0;
+    z-index: 2;
+    background: rgb(228, 226, 226);
+    transition: 0.5s;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 2rem 2rem 0rem 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+#menuBtn {
+    width: 5rem;
+    position: fixed;
+    right: 6.5rem;
+    top: 3.5rem;
+    z-index: 2;
+    cursor: pointer;
+    color: #fff;
+}
+
+#menuBtn {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 850px) {
+    #menuBtn {
+        visibility: visible;
+    }
+    nav ul {
+        margin-top: 9rem;
+    }
+    #menuBtn {
+        width: 5rem;
+        right: 2rem;
+        top: 1.5rem;
+        color: black;
+    }
+}
+
+
+/* ////////////////////////////// sticky-bar side starts //////////////////////// */
 
 .social {
     position: fixed;
@@ -548,11 +487,11 @@ footer {
     transform: scale(1.5);
 }
 
-.social .fa-instagram {
+.social .fa-instagram-square {
     transition: all 0.3s linear;
 }
 
-.social .fa-instagram:hover {
+.social .fa-instagram-square:hover {
     transform: scale(1.5);
 }
 
@@ -636,4 +575,14 @@ footer {
 .home-left i {
     font-size: 2rem;
     color: #2B2B2B;
+}
+
+
+/* ////////////////////////////// responsive-sticky bar side //////////////////// */
+
+@media screen and (max-width: 850px) {
+    .social,
+    .home-left {
+        display: none;
+    }
 }

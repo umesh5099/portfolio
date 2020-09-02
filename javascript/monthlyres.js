@@ -1,6 +1,21 @@
 // alert('hey....');
 // console.log('hello world');
 
+var menuBtn = document.getElementById("menuBtn");
+var sideNav = document.getElementById("sideNav");
+
+
+
+sideNav.style.right = "-250px";
+menuBtn.onclick = function() {
+
+    if (sideNav.style.right == "-110px") {
+        sideNav.style.right = "0";
+    } else {
+        sideNav.style.right = "-110px";
+    }
+}
+
 const quotes = [{
     quote: `"I'm not a great programmer; I'm just a good programmer with great habits."`,
     author: `- Kent Beck`
