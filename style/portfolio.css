@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: gainsboro;
+    background: rgb(183, 183, 183);
 }
 
 
@@ -385,7 +385,7 @@ hr {
 footer {
     display: flex;
     justify-content: center;
-    background: gainsboro;
+    /* background: gainsboro; */
     padding: 4rem 0rem 4rem 0rem;
 }
 
