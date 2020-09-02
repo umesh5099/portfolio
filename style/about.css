@@ -179,7 +179,7 @@ header .header-nav nav a:hover {
 
 .main_right {
     /* background: gold; */
-    /* border-left: .5rem solid grey; */
+    border-left: .05rem solid grey;
     flex: 66%;
 }
 
@@ -366,6 +366,7 @@ header .header-nav nav a:hover {
     /* ////////////////////////// main-right ////////////////////////// */
     .main_right {
         width: 100%;
+        border-left: none;
     }
     .main_right .career_heading {
         word-spacing: 0.1rem;
