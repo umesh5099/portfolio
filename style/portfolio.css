@@ -476,11 +476,11 @@ footer .footer_items a .fa-facebook-official:hover,
     transform: scale(1.5);
 }
 
-.social .fa-instagram {
+.social .fa-instagram-square {
     transition: all 0.3s linear;
 }
 
-.social .fa-instagram:hover {
+.social .fa-instagram-square:hover {
     transform: scale(1.5);
 }
 
