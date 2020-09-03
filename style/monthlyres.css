@@ -241,14 +241,15 @@ a {
     /* color: grey; */
 }
 
-a img {
+
+/* a img {
     transition: all 0.3s linear;
     color: coral;
 }
 
 a:hover img {
     transform: scale(1.5);
-}
+} */
 
 img .linkedin {
     color: coral;
